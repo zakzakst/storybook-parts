@@ -10,7 +10,7 @@
     top: 100%;
     display: block;
     height: 2px;
-    content: '';
+    content: "";
     background: #fa0000;
   }
   &::before {
@@ -33,22 +33,22 @@
 }
 
 .text {
-    flex-grow: 1;
-    font-weight: bold;
+  flex-grow: 1;
+  font-weight: bold;
 }
 
 .arrow {
-    margin-right: 4px;
-    overflow: hidden;
-    color: #fa0000;
+  margin-right: 4px;
+  overflow: hidden;
+  color: #fa0000;
 }
 
 :where(.button:hover) {
-    .arrow {
-      svg {
-        animation: button01ArrowSlide 0.5s forwards;
-      }
+  .arrow {
+    svg {
+      animation: button01ArrowSlide 0.5s forwards;
     }
+  }
 }
 
 @keyframes button01ArrowSlide {
