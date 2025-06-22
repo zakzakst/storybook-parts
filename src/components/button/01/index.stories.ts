@@ -4,6 +4,12 @@ import { Button01 } from '.';
 const meta = {
   title: 'Button/01',
   component: Button01,
+  argTypes: {
+    children: {control: 'text'}
+  },
+  args: {
+    href: '#'
+  },
 } satisfies Meta<typeof Button01>;
 
 export default meta;
