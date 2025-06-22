@@ -4,7 +4,7 @@
   width: 380px;
   padding: 35px;
   overflow: hidden;
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   font-size: 24px;
   border-bottom: 1px solid #000;
   transition: color 0.4s ease-out;
@@ -15,7 +15,7 @@
     left: -5%;
     display: block;
     height: 420%;
-    content: '';
+    content: "";
     background: #000;
     transition: transform 0.4s ease-out;
     transform: skewY(-30deg) scaleY(0);
@@ -54,7 +54,7 @@
   &::after {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     transition: all 0.4s ease-out;
   }
   &::before {
