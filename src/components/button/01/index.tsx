@@ -4,9 +4,9 @@ import styles from './styles.module.css'
 
 type Props = React.ComponentProps<'a'>
 
-export const Button01 = ({className, ...rest}: Props) => {
+export const Button01 = ({className, children, ...rest}: Props) => {
   return (
-    <a className={clsx(styles.button, className)} {...rest}><span className={styles.text}>ボタン01</span><span className={styles.arrow}><FaArrowRight /></span></a>
+    <a className={clsx(styles.button, className)} {...rest}><span className={styles.text}>{children}</span><span className={styles.arrow}><FaArrowRight /></span></a>
   )
 }
 
