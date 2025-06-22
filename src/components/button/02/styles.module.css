@@ -1,0 +1,53 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 55px;
+  padding: 0 20px;
+  font-weight: bold;
+  &::before,
+  &::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    content: '';
+  }
+  &::before {
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #ffff00;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: top right;
+  }
+  &::after {
+    bottom: 0;
+    height: 2px;
+    background: #000;
+  }
+  &:hover {
+    &::before {
+      transform: scaleX(1);
+      transform-origin: top left;
+    }
+  }
+}
+
+.text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 30px;
+      height: 1px;
+      margin: auto 0;
+      content: '';
+      background: #000;
+  }
+}
