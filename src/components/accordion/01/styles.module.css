@@ -1,4 +1,4 @@
-.item {
+.details {
   padding: 0 16px;
   border-bottom: 1px solid #272727;
   &:first-child {
@@ -6,123 +6,111 @@
   }
 }
 
-.itemHead {
+.summary {
+  display: block;
   position: relative;
   padding: 20px 0;
   cursor: pointer;
 }
 
-/* $BLOCK_NAME: '.accordion-01';
-
-// 変数
-$color_primary: #e60000;
-$color_black: #272727;
-$color_gray: #8e8e8e;
-$duration_default: 0.6s;
-$easing_default: cubic-bezier(0.23, 1, 0.32, 1);
-
-#{ $BLOCK_NAME } {
-  padding: 0 16px;
-  font-family: 'Noto Sans JP', sans-serif;
-  border-bottom: 1px solid $color_black;
-  &:nth-of-type(1) {
-    border-top: 1px solid $color_black;
+.summaryText {
+  display: block;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+  
+  > span {
+    display: inline-block;
+    background: linear-gradient(
+      to right,
+      #272727 0%,
+      #272727 50%,
+      #e60000 50%,
+      #e60000 100%
+    );
+    background-position: 200% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% 100%;
+    animation: accordion01TextMaskOut 0.6s cubic-bezier(0.23, 1, 0.32, 1)
+      forwards;
+    -webkit-text-fill-color: transparent;
   }
+}
 
-  &__head {
-    position: relative;
-    padding: 20px 0;
-    cursor: pointer;
-  }
-
-  &__sub-heading {
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 1;
-    & > span {
-      display: inline-block;
-      background: linear-gradient(
-        to right,
-        $color_black 0%,
-        $color_black 50%,
-        $color_primary 50%,
-        $color_primary 100%
-      );
-      background-position: 200% 0;
-      -webkit-background-clip: text;
-      background-size: 200% 100%;
-      animation: accordion01TextMaskOut $duration_default $easing_default
-        forwards;
-      -webkit-text-fill-color: transparent;
-      @at-root #{ $BLOCK_NAME }:hover & {
-        animation: accordion01TextMask $duration_default $easing_default
-          forwards;
-      }
-      @at-root #{ $BLOCK_NAME }.is-open & {
-        animation: accordion01TextMask $duration_default $easing_default
-          forwards;
-      }
-    }
-  }
-
-  &__heading {
+.summarySubText {
     margin-top: 8px;
     font-size: 14px;
-    color: $color_gray;
-  }
+    color: #8e8e8e;
+  display: block;
+}
 
-  &__icon {
+.summaryIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: auto;
+  content: '';
+  &::before,
+  &::after {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
+    left: 0;
     display: block;
-    width: 26px;
-    height: 26px;
+    height: 3px;
     margin: auto;
     content: '';
-    &::before,
-    &::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      display: block;
-      height: 3px;
-      margin: auto;
-      content: '';
-      background: #000;
-      transition: background-color 0.3s;
-      @at-root #{ $BLOCK_NAME }:hover & {
-        background: $color_primary;
-      }
-    }
-    &::after {
-      transition: all 0.3s;
-      transform: rotate(90deg);
-      @at-root #{ $BLOCK_NAME }.is-open & {
-        background: $color_primary;
-        transform: rotate(0);
-      }
-    }
+    background: #000;
+    transition: background-color 0.3s;
   }
-
-  &__content-wrapper {
-    height: 0;
-    overflow: hidden;
-  }
-
-  &__content {
-    padding-bottom: 16px;
-    opacity: 0;
+  &::after {
     transition: all 0.3s;
-    transform: translateY(4px);
-    @at-root #{ $BLOCK_NAME }.is-open & {
-      opacity: 1;
-      transition-delay: 0.5s;
-      transform: translateY(0);
-    }
+    transform: rotate(90deg);
+  }
+}
+
+.content {
+  overflow: hidden;
+}
+
+.contentInner {
+  padding-bottom: 16px;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateY(4px);
+}
+
+:where(.details:hover) {
+  .summaryText > span {
+      animation: accordion01TextMask 0.6s cubic-bezier(0.23, 1, 0.32, 1)
+        forwards;
+  }
+  .summaryIcon::before,
+  .summaryIcon::after {
+      background: #e60000;
+  }
+}
+
+:where(.details[open]) {
+  .summaryText > span {
+      animation: accordion01TextMask 0.6s cubic-bezier(0.23, 1, 0.32, 1)
+        forwards;
+  }
+  .summaryIcon::before,
+  .summaryIcon::after {
+      background: #e60000;
+      transform: rotate(0);
+  }
+  .contentInner {
+    opacity: 1;
+    transition-delay: 0.5s;
+    transform: translateY(0);
   }
 }
 
@@ -142,4 +130,4 @@ $easing_default: cubic-bezier(0.23, 1, 0.32, 1);
   to {
     background-position: 0 0;
   }
-} */
+}

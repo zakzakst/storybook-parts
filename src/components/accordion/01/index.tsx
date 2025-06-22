@@ -1,30 +1,35 @@
 "use client";
 
+import { useRef } from "react";
 import styles from "./styles.module.css";
 
 type Accordion01Item = {
   id: string;
-  title: string;
-  subTitle: string;
+  text: string;
+  subText: string;
   content: React.ReactNode;
+  name?: string
 };
 
 type ItemProps = Accordion01Item;
 
-const Accordion01Item = ({ title, subTitle, content }: ItemProps) => {
+const Accordion01Item = ({ name, text, subText, content }: ItemProps) => {
+  const contentRef = useRef<HTMLDivElement | null>(null)
   return (
-    <div class="accordion-01 js-accordion-01">
-      <div class="accordion-01__head">
-        <p class="accordion-01__sub-heading">
-          <span>{title}</span>
-        </p>
-        <h3 class="accordion-01__heading">{subTitle}</h3>
-        <div class="accordion-01__icon"></div>
+    <details className={styles.details} name={name}>
+      <summary className={styles.summary}>
+        <span className={styles.summaryText}>
+          <span>{text}</span>
+        </span>
+        <span className={styles.summarySubText}>{subText}</span>
+        <span className={styles.summaryIcon}></span>
+      </summary>
+      <div className={styles.content} ref={contentRef}>
+        <div className={styles.contentInner}>
+          {content}
+        </div>
       </div>
-      <div className={styles.contentWrapper}>
-        <div class="accordion-01__content">{content}</div>
-      </div>
-    </div>
+    </details>
   );
 };
 
