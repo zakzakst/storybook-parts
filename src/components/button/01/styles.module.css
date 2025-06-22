@@ -1,0 +1,71 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 2px solid #e6e6e6;
+  &::before,
+  &::after {
+    position: absolute;
+    top: 100%;
+    display: block;
+    height: 2px;
+    content: '';
+    background: #fa0000;
+  }
+  &::before {
+    left: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  &::after {
+    right: 0;
+    width: 30px;
+  }
+  &:hover {
+    &::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
+
+.text {
+    flex-grow: 1;
+    font-weight: bold;
+}
+
+.arrow {
+    margin-right: 4px;
+    overflow: hidden;
+    color: #fa0000;
+}
+
+:where(.button:hover) {
+    .arrow {
+      svg {
+        animation: button01ArrowSlide 0.5s forwards;
+      }
+    }
+}
+
+@keyframes button01ArrowSlide {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  51% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
