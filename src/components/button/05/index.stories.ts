@@ -1,3 +1,4 @@
+// http://www.vntus.jp/
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button05 } from ".";
 

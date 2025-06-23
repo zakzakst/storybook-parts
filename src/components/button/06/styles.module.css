@@ -1,0 +1,57 @@
+.button {
+  position: relative;
+  display: block;
+  padding-left: 1.5em;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 66px;
+  color: #fff;
+  letter-spacing: 0.25em;
+  background: #0bcdf7;
+  border-radius: 99em;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  &:hover {
+    color: #fff;
+    transform: scale(1.05);
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  right: 21px;
+  bottom: 0;
+  display: block;
+  width: 33px;
+  height: 33px;
+  margin: auto 0;
+  content: "";
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transition: background-color 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    display: block;
+    width: 11px;
+    height: 11px;
+    margin: auto 0;
+    content: "";
+    border: solid #fff;
+    border-width: 3px 3px 0 0;
+    transition: border-color 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transform: rotate(45deg);
+  }
+}
+
+:where(.button:hover) {
+  .arrow {
+    background: #fff;
+    &::before {
+      border-color: #0bcdf7;
+    }
+  }
+}

@@ -1,9 +1,10 @@
 ### 次やる
 
-https://zakzakst.github.io/parts/components/detail/button06.html
+https://zakzakst.github.io/parts/components/detail/button08.html
 
 ### やること
 
+- gh-pages 設定
 - linter を設定（stylelint も）
 - デザインを参考にしたページの URL の記載方法考える
 - フォントファミリーの反映

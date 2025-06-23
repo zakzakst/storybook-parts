@@ -1,3 +1,4 @@
+// https://www.bebit.co.jp/
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button02 } from ".";
 
