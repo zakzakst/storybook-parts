@@ -1,0 +1,36 @@
+.button {
+  position: relative;
+  display: inline-block;
+  padding-right: 8.5em;
+  font-family: "EB Garamond", serif;
+  font-size: 16px;
+  color: #989898;
+  transition: color 0s ease 0.1s;
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 2.5em;
+    bottom: 0;
+    display: block;
+    width: 4.5em;
+    height: 1px;
+    margin: auto 0;
+    content: "";
+  }
+  &::before {
+    background: #d5d5d5;
+  }
+  &::after {
+    background: #171e27;
+    transition: transform 0.3s;
+    transform: scale(0.1, 1);
+    transform-origin: left;
+  }
+  &:hover {
+    color: #171e27;
+    &::after {
+      transform: scale(1);
+    }
+  }
+}
