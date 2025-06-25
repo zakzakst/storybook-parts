@@ -1,0 +1,51 @@
+.button {
+  position: relative;
+  display: block;
+  padding-left: 12px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  color: #000;
+  letter-spacing: 1.5px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    content: "";
+    transition: all 0.3s cubic-bezier(0.08, 0.92, 0.35, 1);
+  }
+
+  &::before {
+    top: 3px;
+    right: calc(100% - 8px);
+    width: 4px;
+    height: 4px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+
+  &::after {
+    top: 5px;
+    right: calc(100% - 6px);
+    background: #000;
+    opacity: 0;
+    transform: scale(0.3);
+  }
+
+  &:hover {
+    color: #000;
+
+    &::before {
+      width: 6px;
+      height: 6px;
+    }
+
+    &::after {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
