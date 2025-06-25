@@ -1,0 +1,46 @@
+.button {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 10px 0 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #333;
+  border-radius: 9999px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    z-index: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background-color: #efefef;
+    border-radius: 9999px;
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  > span {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 3px;
+    line-height: 1;
+    background-image: linear-gradient(180deg, #bfbfbf, #bfbfbf);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% 1px;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &::before {
+      width: calc(100% + 30px);
+      background-color: #333;
+      box-shadow: 0 5px 13px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
