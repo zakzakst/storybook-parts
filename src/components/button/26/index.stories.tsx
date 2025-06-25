@@ -1,23 +1,23 @@
-// https://lavie-enfant.com/
+// https://www.e-heyaspace.com/
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Button25 } from ".";
+import { Button26 } from ".";
 
 const meta = {
-  title: "Button/25",
-  component: Button25,
+  title: "Button/26",
+  component: Button26,
   argTypes: {
     children: { control: "text" },
   },
   args: {
     href: "#",
   },
-} satisfies Meta<typeof Button25>;
+} satisfies Meta<typeof Button26>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "BUTTON25",
+    children: "ボタン26",
   },
 };
