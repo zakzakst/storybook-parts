@@ -1,4 +1,4 @@
-// https://giginc.co.jp/
+// https://www.dot-st.com/cp/jeanasis/jeanasis_media
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button18 } from ".";
 
