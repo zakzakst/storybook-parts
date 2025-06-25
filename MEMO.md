@@ -10,3 +10,7 @@ https://zakzakst.github.io/parts/components/detail/button32.html
 - フォントファミリーの反映
 - accordion01 の開閉を下記を参考に試す
   https://ics.media/entry/220901/
+
+### メモ
+
+https://react-icons.github.io/react-icons/

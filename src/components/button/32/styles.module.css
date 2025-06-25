@@ -1,0 +1,59 @@
+.button {
+  position: relative;
+  display: block;
+  width: 260px;
+  height: 56px;
+  overflow: hidden;
+  font-family: YakuHanJP, "Noto Sans JP", sans-serif;
+  font-size: 17px;
+  line-height: 56px;
+  color: #fff;
+  text-align: center;
+  background: #f2bd66;
+  border-radius: 9999px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: #efad40;
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+    transition: transform 0.48s cubic-bezier(0.895, 0.03, 0.685, 0.22),
+      border-radius 0.35s cubic-bezier(0.55, 0.085, 0.68, 0.53) 40ms;
+    transform: scaleY(0);
+    transform-origin: center bottom;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    bottom: 0;
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: auto;
+    content: "";
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+  }
+
+  > span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover {
+    color: #fff;
+    &::before {
+      border-radius: 50% 50% 0 0/0 0 0 0;
+      transition: transform 0.48s cubic-bezier(0.165, 0.84, 0.44, 1),
+        border-radius 0.35s cubic-bezier(0.55, 0.085, 0.68, 0.53) 20ms;
+      transform: scaleY(1);
+    }
+  }
+}
