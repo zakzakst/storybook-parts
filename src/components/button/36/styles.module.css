@@ -1,0 +1,39 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 60px 80px 60px;
+  background: #fff;
+  width: fit-content;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    content: "";
+    background: #e3e3e3;
+    border-radius: 50%;
+    mix-blend-mode: exclusion;
+    transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+    transform: scale(0.4);
+  }
+
+  > span {
+    padding-bottom: 1px;
+    font-size: 14px;
+    line-height: 1;
+    color: #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1);
+    }
+  }
+}
