@@ -1,0 +1,110 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 45px;
+  padding: 0 78px 0 36px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #000;
+  transition: border-color 0.3s cubic-bezier(0.45, 0.05, 0.3, 0.93);
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    content: "";
+    background: #fdcf10;
+    transition: transform 0.3s cubic-bezier(0.45, 0.05, 0.3, 0.93);
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  &:hover {
+    border-color: #fdcf10;
+    &::before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  bottom: 0;
+  display: block;
+  width: 48px;
+  margin: auto 0;
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin: auto 0;
+    content: "";
+    background: #000;
+  }
+  &::before {
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: button12ArrowDot 1.5s cubic-bezier(0.45, 0.05, 0.3, 0.93) 1s
+      infinite;
+  }
+  &::after {
+    right: 4px;
+    left: 0;
+    height: 1px;
+    animation: button12ArrowLine 1.5s cubic-bezier(0.45, 0.05, 0.3, 0.93) 1s
+      infinite;
+  }
+}
+
+@keyframes button12ArrowDot {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes button12ArrowLine {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left center;
+  }
+  30% {
+    transform: scaleX(1);
+    transform-origin: left center;
+  }
+  31% {
+    transform: scaleX(1);
+    transform-origin: right center;
+  }
+  60% {
+    transform: scaleX(0);
+    transform-origin: right center;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right center;
+  }
+}
