@@ -1,6 +1,6 @@
 ### 次やる
 
-https://zakzakst.github.io/parts/components/detail/button14.html
+https://zakzakst.github.io/parts/components/detail/button15.html
 
 ### やること
 
