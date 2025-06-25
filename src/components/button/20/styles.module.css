@@ -1,0 +1,64 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  padding-left: 48px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 11.5px;
+  font-weight: 500;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 64px;
+  height: 64px;
+  content: "";
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    content: "";
+    border-radius: 50%;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  &::before {
+    background: #ffb65f;
+  }
+  &::after {
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    transform: scale(0);
+  }
+}
+
+.text {
+  z-index: 2;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+:where(.button:hover) {
+  .circle {
+    &::before {
+      transform: scale(1.05);
+    }
+    &::after {
+      transform: scale(1);
+    }
+  }
+
+  .text {
+    transform: translateX(5px);
+  }
+}
