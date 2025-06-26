@@ -1,0 +1,86 @@
+.card {
+  position: relative;
+  display: block;
+  max-width: 360px;
+  padding: 35px 40px 60px 40px;
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.18em;
+  background: #b32619;
+  border-radius: 2px;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin: 25px auto 30px;
+  > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.heading {
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #dd2e1e;
+}
+
+.content {
+  font-size: 13px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  &::before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #dd2e1e;
+    border-radius: 50%;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: translate(50%, 50%) scale(0.8);
+  }
+  &::after {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    color: #fff;
+    content: "";
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transition: all 0.3s ease;
+    transform: rotate(45deg);
+  }
+}
+
+:where(.card:hover) {
+  .button {
+    &::before {
+      transform: translate(50%, 50%) scale(1.3);
+      transform-origin: 70% 70%;
+    }
+    &::after {
+      transform: rotate(45deg) translate(-150%, 20%) scale(1.2);
+    }
+  }
+}
