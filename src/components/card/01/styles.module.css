@@ -1,0 +1,70 @@
+.card {
+  position: relative;
+  display: block;
+  max-width: 360px;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: box-shadow 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    height: 15px;
+    content: "";
+    background: #e3ff00;
+    transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transform: translateY(100%);
+  }
+
+  &:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    &::before {
+      transform: translateY(0);
+    }
+  }
+}
+
+.thumbnail {
+  aspect-ratio: 1.414 / 1;
+  background: center no-repeat;
+  background-size: cover;
+  transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  letter-spacing: 0.35px;
+}
+
+.textEn {
+  font-family: Oswald, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.textJa {
+  margin-top: 1em;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+:where(.card:hover) {
+  .thumbnail {
+    transform: scale(1.1);
+  }
+}
