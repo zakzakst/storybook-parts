@@ -2,7 +2,7 @@
 
 https://zakzakst.github.io/parts/components/detail/button38.html
 
-https://zakzakst.github.io/parts/components/detail/card04.html
+https://zakzakst.github.io/parts/components/detail/card08.html
 
 ### やること
 
