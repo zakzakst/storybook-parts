@@ -1,9 +1,5 @@
 ### 次やる
 
-https://zakzakst.github.io/parts/components/detail/button38.html
-
-https://zakzakst.github.io/parts/components/detail/card08.html
-
 ### やること
 
 - gh-pages 設定
@@ -16,3 +12,8 @@ https://zakzakst.github.io/parts/components/detail/card08.html
 ### メモ
 
 https://react-icons.github.io/react-icons/
+
+### あとでやる
+
+- src\components\button\21-40\37\index.tsx
+- src\components\card\12\index.tsx
