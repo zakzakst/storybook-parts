@@ -1,0 +1,34 @@
+.card {
+  position: relative;
+  width: 300px;
+  max-height: 450px;
+  overflow: hidden;
+  filter: drop-shadow(0 22px 62px rgba(9, 30, 66, 0.24));
+  border-radius: 10px;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    box-shadow: inset 0 -5px 4px rgba(9, 30, 66, 0.2);
+  }
+}
+
+.thumbnail {
+  transition: transform 0.3s ease-in;
+  > img {
+    width: 100%;
+    height: auto;
+    transition: transform 1.5s ease-in;
+  }
+}
+
+:where(.card:hover) {
+  .thumbnail > img {
+    transform: translateY(-100px);
+  }
+}
