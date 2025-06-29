@@ -1,0 +1,82 @@
+.card {
+  display: flex;
+  width: 540px;
+  min-height: 250px;
+  overflow: hidden;
+  font-family: "Noto Sans JP", sans-serif;
+  background: #fff;
+  box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.08);
+  transition: background-color 1s, box-shadow 1s;
+  &:hover {
+    background: #ce009f;
+    box-shadow: 0 10px 15px rgba(95, 20, 78, 0.3);
+  }
+}
+
+.thumbnail {
+  position: relative;
+  flex-shrink: 0;
+  width: 270px;
+  overflow: hidden;
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center left;
+    transition: transform 1s;
+  }
+}
+
+.thumbnailMask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  > svg {
+    height: 100%;
+    fill: #fff;
+    transition: fill 1s;
+  }
+}
+
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 25px 0;
+  margin-left: -20px;
+}
+
+.content {
+  flex-grow: 1;
+  font-weight: 500;
+  color: #1a1a1a;
+  transition: color 1s;
+}
+
+.date {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8b8b8b;
+  letter-spacing: 1px;
+  transition: color 1s;
+}
+
+:where(.card:hover) {
+  .thumbnail > img {
+    transform: scale(1.1);
+  }
+
+  .thumbnailMask > svg {
+    fill: #ce009f;
+  }
+
+  .content {
+    color: #fff;
+  }
+
+  .date {
+    color: #fff;
+  }
+}
