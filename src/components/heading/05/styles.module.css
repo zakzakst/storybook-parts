@@ -1,0 +1,50 @@
+.module {
+  position: relative;
+  width: 300px;
+  padding: 24px 0 40px;
+  margin-top: 48px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border: 3px solid #009b63;
+  border-top: none;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+
+  &::before {
+    position: absolute;
+    right: -3px;
+    bottom: calc(100% + 4px);
+    left: -3px;
+    display: block;
+    height: 20px;
+    content: "";
+    border: 3px solid #0056a1;
+    border-bottom: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    transform: rotate(-5deg);
+    transform-origin: bottom left;
+  }
+}
+
+.shoulder {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+
+  > span {
+    &[data-char-variant="primary"] {
+      color: #009b63;
+    }
+
+    &[data-char-variant="secondary"] {
+      color: #0056a1;
+    }
+  }
+}
