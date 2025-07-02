@@ -1,0 +1,122 @@
+.module {
+  display: block;
+  padding: 48px 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #fff;
+  background: linear-gradient(135deg, #0066b8 0%, #7e2b6e 50%, #ed9a30 100%);
+  background-size: 200% 200%;
+  animation: contact03BgAnim 10s ease infinite;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.heading {
+  line-height: 1;
+}
+
+.headingEn {
+  display: inline-block;
+  margin-right: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.text {
+  margin-top: 32px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 2;
+  > span {
+    position: relative;
+    display: inline-block;
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      height: 1px;
+      content: "";
+      background: #fff;
+      transition: transform 0.3s;
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+  }
+}
+
+.buttonIcon {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  margin-left: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    content: "";
+  }
+  &::before {
+    left: 2px;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 3px 0 3px 9px;
+    transition: border-color 0.3s;
+  }
+  &::after {
+    width: 56px;
+    height: 56px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    transform: scale(0);
+  }
+}
+
+:where(.module:hover) {
+  .button > span::after {
+    transform: scaleX(1);
+  }
+
+  .buttonIcon {
+    &::before {
+      border-color: transparent transparent transparent #171717;
+    }
+    &::after {
+      transform: scale(1);
+    }
+  }
+}
+
+@keyframes contact03BgAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
