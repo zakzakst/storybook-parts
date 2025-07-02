@@ -1,0 +1,53 @@
+.module {
+  container-type: inline-size;
+}
+
+.shoulder {
+  position: relative;
+  display: block;
+  max-width: 130px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  color: #56bcb3;
+  letter-spacing: 0.12em;
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 60px;
+    height: 1px;
+    margin: auto;
+    content: "";
+    background-color: #56bcb3;
+  }
+}
+
+.heading {
+  padding-top: 10px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.75;
+  letter-spacing: 0.16em;
+}
+
+@container (width > 768px) {
+  .shoulder {
+    max-width: 154px;
+    font-size: 13px;
+    &::after {
+      width: 80px;
+    }
+  }
+
+  .heading {
+    padding-top: 20px;
+    font-size: 24px;
+    line-height: 1.67;
+    letter-spacing: 0.11em;
+  }
+}
