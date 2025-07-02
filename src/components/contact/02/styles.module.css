@@ -1,0 +1,28 @@
+.module {
+  display: flex;
+}
+
+.link {
+  display: block;
+  width: 50%;
+  padding: 30px 0;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  transition: opacity 0.6s;
+  &:nth-child(1) {
+    background: #1ba1e6;
+  }
+  &:nth-child(2) {
+    background: #82c7e6;
+  }
+  &:hover {
+    color: #fff;
+    opacity: 0.6;
+  }
+}
+
+.icon {
+  width: 32px;
+  margin: 0 auto 5px;
+}
