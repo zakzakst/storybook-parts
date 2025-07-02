@@ -1,0 +1,60 @@
+.module {
+  font-family: YuGothic, 游ゴシック, "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  color: #3f3f3f;
+}
+
+.heading {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.description {
+  position: relative;
+  margin-top: 56px;
+  &::before {
+    position: absolute;
+    top: calc(-56px / 2 - 2px);
+    right: 0;
+    left: 0;
+    display: block;
+    width: 36px;
+    height: 4px;
+    margin: auto;
+    content: "";
+    background: #d7d7d7;
+    border-radius: 2px;
+  }
+}
+
+@container (width > 768px) {
+  .module {
+    display: flex;
+    align-items: center;
+  }
+
+  .heading {
+    flex-shrink: 0;
+    font-size: 45px;
+    letter-spacing: 0.12em;
+  }
+
+  .description {
+    margin-top: 0;
+    margin-left: 134px;
+    &::before {
+      top: 6px;
+      right: auto;
+      bottom: 6px;
+      left: calc(-134px / 2);
+      display: block;
+      width: 3px;
+      height: auto;
+      background: #d7d7d7;
+      border-radius: 2px;
+    }
+  }
+}
