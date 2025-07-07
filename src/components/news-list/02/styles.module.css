@@ -1,0 +1,89 @@
+.module {
+  container-type: inline-size;
+  > li {
+    border-bottom: 1px solid #e4e4e4;
+    &:first-child {
+      border-top: 1px solid #e4e4e4;
+    }
+  }
+}
+
+.link {
+  position: relative;
+  display: block;
+  padding: 23px 4%;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    content: "";
+    background: #ffff00;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  &:hover {
+    &::before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+}
+
+.linkInner {
+  position: relative;
+  color: #000;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 21px;
+    height: 1px;
+    margin: auto;
+    content: "";
+    background: #000;
+  }
+}
+
+.linkInfo {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  & > span {
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    color: #565656;
+  }
+}
+
+.linkText {
+  padding: 10px 5% 0 0;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+@container (width > 768px) {
+  .linkInner {
+    display: flex;
+    align-items: center;
+  }
+
+  .linkInfo {
+    flex-shrink: 0;
+    width: 15%;
+    padding: 15px 0;
+    border-right: 1px solid #000;
+  }
+
+  .linkText {
+    padding: 0 5%;
+    font-size: 16px;
+  }
+}
