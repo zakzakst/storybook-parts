@@ -1,0 +1,71 @@
+.module {
+  padding-inline: 32px;
+}
+
+.link {
+  position: relative;
+  display: block;
+  padding: 18px 0;
+  color: #000;
+  border-bottom: 1px solid #e2e2e2;
+  &::before {
+    position: absolute;
+    /* 上のボーダーを隠す目的で1pxオフセットを設定 */
+    top: -1px;
+    right: -32px;
+    /* 下のボーダーを隠す目的で1pxオフセットを設定 */
+    bottom: -1px;
+    left: -32px;
+    display: block;
+    content: "";
+    background: #fff;
+    box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.16);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  &:hover {
+    &::before {
+      content: "";
+      opacity: 1;
+    }
+  }
+}
+
+.linkInfo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.linkCategory {
+  display: inline-block;
+  width: 94px;
+  height: 20px;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background: #131313;
+  border-radius: 2px;
+}
+
+.linkDate {
+  margin-left: 10px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.linkWeek {
+  margin-left: 4px;
+}
+
+.linkText {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+}
