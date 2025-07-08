@@ -1,0 +1,43 @@
+.module {
+  font-family: YakuHanJP, "Noto Sans JP", sans-serif;
+}
+
+.item {
+  padding: 8px 0;
+  border-bottom: 1px dashed #e2d2bd;
+  &:first-child {
+    border-top: 1px dashed #e2d2bd;
+  }
+}
+.link {
+  display: flex;
+  align-items: center;
+  padding: 24px 16px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px dashed transparent;
+  border-radius: 10px;
+  transition: all 0.4s;
+  &:hover {
+    background: #fef5e5;
+    border: 1px dashed #e2d2bd;
+  }
+}
+
+.date {
+  flex-shrink: 0;
+  width: 90px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ac916b;
+}
+
+.text {
+  width: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5c4c2c;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
