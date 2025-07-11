@@ -3,8 +3,9 @@ import styles from "./styles.module.css";
 
 type Item = {
   href: string;
-  date: string;
-  text: string;
+  icon: string;
+  textJa: string;
+  textEn: string;
 };
 
 type OwnProps = {
@@ -18,11 +19,12 @@ export const ServiceList01 = ({ className, items, ...rest }: Props) => {
     <ul className={clsx(styles.module, className)} {...rest}>
       {items.map((item, index) => (
         <li key={index}>
-          <a class="service-list-01__icon" href="#">
-            <img src="http://placehold.jp/350x350.png?text=ICON" />
+          <a className={styles.link} href={item.href}>
+            <img src={item.icon} alt="" />
           </a>
-          <p class="service-list-01__text">
-            <span>SERVICE LIST 01</span>サービス一覧01
+          <p className={styles.text}>
+            <span className={styles.textEn}>{item.textEn}</span>
+            <span className={styles.textJa}>{item.textJa}</span>
           </p>
         </li>
       ))}
