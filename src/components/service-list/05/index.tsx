@@ -20,7 +20,11 @@ export const ServiceList05 = ({ className, items, ...rest }: Props) => {
     <ul className={clsx(styles.module, className)} {...rest}>
       {items.map((item, index) => (
         <li key={index}>
-          <a className={styles.link} href={item.link}>
+          <a
+            className={styles.link}
+            href={item.link}
+            data-item-type={index % 2 === 1 ? "odd" : "even"}
+          >
             <div className={styles.content}>
               <div className={styles.thumbnail}>
                 <img src={item.thumbnail} alt="" />
@@ -30,7 +34,6 @@ export const ServiceList05 = ({ className, items, ...rest }: Props) => {
             </div>
             <div className={styles.arrow}>
               <FaAngleRight className={styles.arrowIcon} />
-              {/* <i class="fas fa-long-arrow-alt-right"></i> */}
             </div>
             <div className={styles.bg} />
           </a>
