@@ -2,9 +2,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  padding: 60px 80px 60px;
-  background: #fff;
   width: fit-content;
+  padding: 60px 80px;
+  background: #fff;
 
   &::after {
     position: absolute;
@@ -19,8 +19,8 @@
     background: #e3e3e3;
     border-radius: 50%;
     mix-blend-mode: exclusion;
-    transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
     transform: scale(0.4);
+    transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
   }
 
   > span {

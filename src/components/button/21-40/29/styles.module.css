@@ -45,6 +45,7 @@
   &:hover {
     color: #fff;
     background: #000;
+
     &::before {
       left: 16px;
     }

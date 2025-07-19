@@ -11,9 +11,10 @@
   padding-left: 10px;
   margin-bottom: 20px;
   font-family: "游ゴシック", YuGothic, sans-serif;
-  color: #333333;
-  border-top: 2px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
+  color: #333;
+  border-top: 2px solid #ccc;
+  border-bottom: 1px solid #ccc;
+
   &::before {
     position: absolute;
     top: -2px;
@@ -22,7 +23,7 @@
     width: 100px;
     height: 2px;
     content: "";
-    background: #cc0000;
+    background: #c00;
   }
 }
 
@@ -41,5 +42,5 @@
   left: 0;
   width: 14px;
   margin: auto;
-  fill: #cc0000;
+  fill: #c00;
 }

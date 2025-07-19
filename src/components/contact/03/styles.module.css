@@ -8,6 +8,7 @@
   background: linear-gradient(135deg, #0066b8 0%, #7e2b6e 50%, #ed9a30 100%);
   background-size: 200% 200%;
   animation: contact03BgAnim 10s ease infinite;
+
   &:hover {
     color: #fff;
   }
@@ -35,9 +36,11 @@
   margin-top: 16px;
   font-size: 12px;
   line-height: 2;
+
   > span {
     position: relative;
     display: inline-block;
+
     &::after {
       position: absolute;
       right: 0;
@@ -47,9 +50,9 @@
       height: 1px;
       content: "";
       background: #fff;
-      transition: transform 0.3s;
       transform: scaleX(0);
       transform-origin: left;
+      transition: transform 0.3s;
     }
   }
 }
@@ -60,20 +63,19 @@
   width: 56px;
   height: 56px;
   margin-left: 24px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgb(255 255 255 / 10%);
+  border: 1px solid rgb(255 255 255 / 30%);
   border-radius: 50%;
+
   &::before,
   &::after {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     display: block;
     margin: auto;
     content: "";
   }
+
   &::before {
     left: 2px;
     z-index: 1;
@@ -84,13 +86,14 @@
     border-width: 3px 0 3px 9px;
     transition: border-color 0.3s;
   }
+
   &::after {
     width: 56px;
     height: 56px;
     background: #fff;
     border-radius: 50%;
-    transition: transform 0.3s;
     transform: scale(0);
+    transition: transform 0.3s;
   }
 }
 
@@ -103,6 +106,7 @@
     &::before {
       border-color: transparent transparent transparent #171717;
     }
+
     &::after {
       transform: scale(1);
     }
@@ -113,9 +117,11 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }

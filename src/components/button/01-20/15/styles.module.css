@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
   padding: 15px 30px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #fff;
@@ -11,6 +11,7 @@
   background: #074e40;
   border: 1px solid #074e40;
   transition: all 0.2s;
+
   &::before,
   &::after {
     position: absolute;
@@ -21,20 +22,24 @@
     background: #000;
     transition: all 0.2s;
   }
+
   &::before {
     top: 45%;
     right: -9px;
     background: linear-gradient(to right, #fff 70%, #074e40 70% 100%);
   }
+
   &::after {
     top: 50%;
     right: -21px;
     background: linear-gradient(to right, #fff 30%, #074e40 30% 100%);
   }
+
   &:hover {
     color: #074e40;
     letter-spacing: 5px;
     background: #fff;
+
     &::before,
     &::after {
       right: -15px;

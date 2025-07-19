@@ -4,11 +4,11 @@
   font-size: 42px;
   font-weight: normal;
   line-height: 1;
-  color: #bbbbbb;
+  color: #bbb;
 
   > em {
-    color: #00529c;
     font-style: normal;
+    color: #00529c;
   }
 
   .num {
@@ -16,13 +16,13 @@
     padding-right: 10px;
     padding-bottom: 15px;
     margin-right: 20px;
-    font-family: "Oswald", sans-serif;
+    font-family: Oswald, sans-serif;
     font-size: 75px;
     font-style: italic;
     font-weight: 200;
     line-height: 1;
-    color: #333333;
+    color: #333;
     letter-spacing: 0.01em;
-    border-bottom: 4px solid #333333;
+    border-bottom: 4px solid #333;
   }
 }

@@ -12,29 +12,23 @@
   overflow: hidden;
 
   > img {
-    object-fit: cover;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     transition: transform 0.5s;
   }
 }
 
 .borderContainer {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 20px;
-  right: 20px;
-  transition: all 0.5s;
+  inset: 0 20px 20px 0;
   opacity: 1;
+  transition: all 0.5s;
 }
 
 .border {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  inset: 0;
 
   &::before,
   &::after {
@@ -44,15 +38,15 @@
   }
 
   &::before {
-    height: 4px;
     width: 0;
+    height: 4px;
     transition: height 0.5s;
     animation: lineAnimX 0.2s linear forwards;
   }
 
   &::after {
-    height: 0;
     width: 4px;
+    height: 0;
     transition: width 0.5s;
     animation: lineAnimY 0.2s linear forwards;
   }
@@ -63,6 +57,7 @@
       left: 0;
       animation-delay: calc(0.2s * 0);
     }
+
     &::after {
       top: 0;
       right: 0;
@@ -72,10 +67,11 @@
 
   &[data-border-pos="bottom-left"] {
     &::before {
-      bottom: 0;
       right: 0;
+      bottom: 0;
       animation-delay: calc(0.2s * 2);
     }
+
     &::after {
       bottom: 0;
       left: 0;
@@ -86,16 +82,13 @@
 
 .text {
   position: absolute;
-  top: 20px;
-  bottom: 0;
-  left: 20px;
-  right: 0;
+  inset: 20px 0 0 20px;
   z-index: 1;
-  color: #fff;
-  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
+  color: #fff;
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s;
@@ -107,8 +100,8 @@
   }
 
   .borderContainer {
-    transform: translate(20px, 20px);
     opacity: 0.5;
+    transform: translate(20px, 20px);
   }
 
   .border {
@@ -130,6 +123,7 @@
   0% {
     width: 0;
   }
+
   100% {
     width: 100%;
   }
@@ -139,6 +133,7 @@
   0% {
     height: 0;
   }
+
   100% {
     height: 100%;
   }

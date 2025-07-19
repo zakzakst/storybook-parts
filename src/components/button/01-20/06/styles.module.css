@@ -9,8 +9,9 @@
   letter-spacing: 0.25em;
   background: #0bcdf7;
   border-radius: 99em;
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px 0 rgb(0 0 0 / 20%);
   transition: transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+
   &:hover {
     color: #fff;
     transform: scale(1.05);
@@ -30,6 +31,7 @@
   border: 3px solid #fff;
   border-radius: 50%;
   transition: background-color 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+
   &::before {
     position: absolute;
     top: 0;
@@ -42,14 +44,15 @@
     content: "";
     border: solid #fff;
     border-width: 3px 3px 0 0;
-    transition: border-color 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
     transform: rotate(45deg);
+    transition: border-color 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
 }
 
 :where(.button:hover) {
   .arrow {
     background: #fff;
+
     &::before {
       border-color: #0bcdf7;
     }

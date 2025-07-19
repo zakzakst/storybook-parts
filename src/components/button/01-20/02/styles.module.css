@@ -5,6 +5,7 @@
   height: 55px;
   padding: 0 20px;
   font-weight: bold;
+
   &::before,
   &::after {
     position: absolute;
@@ -13,20 +14,23 @@
     display: block;
     content: "";
   }
+
   &::before {
     top: 0;
     bottom: 0;
     z-index: 1;
-    background: #ffff00;
-    transition: transform 0.5s;
+    background: #ff0;
     transform: scaleX(0);
     transform-origin: top right;
+    transition: transform 0.5s;
   }
+
   &::after {
     bottom: 0;
     height: 2px;
     background: #000;
   }
+
   &:hover {
     &::before {
       transform: scaleX(1);
@@ -39,6 +43,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
+
   &::after {
     position: absolute;
     top: 0;

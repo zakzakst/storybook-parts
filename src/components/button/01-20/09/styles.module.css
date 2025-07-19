@@ -8,6 +8,7 @@
   border: 1px solid #dfdfdb;
   border-radius: 24px;
   transition: border-color 0.5s;
+
   &:hover {
     border-color: #79520b;
   }
@@ -30,6 +31,7 @@
 
 .hoverText {
   transform: translateY(-100%);
+
   & > span {
     opacity: 0;
     transform: translateX(-8px);
@@ -78,6 +80,7 @@
     opacity: 0;
     transform: translateX(8px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -89,6 +92,7 @@
     opacity: 1;
     transform: translateX(0);
   }
+
   100% {
     opacity: 0;
     transform: translateX(-8px);

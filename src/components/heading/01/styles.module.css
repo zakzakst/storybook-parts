@@ -6,12 +6,13 @@
   position: relative;
   display: block;
   max-width: 130px;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 1;
   color: #56bcb3;
   letter-spacing: 0.12em;
+
   &::after {
     position: absolute;
     top: 0;
@@ -39,6 +40,7 @@
   .shoulder {
     max-width: 154px;
     font-size: 13px;
+
     &::after {
       width: 80px;
     }

@@ -25,15 +25,12 @@
 
   &::before {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     content: "";
     background: #121314;
     border-radius: 50%;
-    transition: transform 0.2s cubic-bezier(0.55, 0.05, 0.22, 0.99);
     transform: scale(0);
+    transition: transform 0.2s cubic-bezier(0.55, 0.05, 0.22, 0.99);
   }
 }
 
@@ -45,6 +42,7 @@
 :where(.button:hover) {
   .icon {
     border-color: #121314;
+
     &::before {
       transform: scale(0.9);
     }
@@ -60,15 +58,18 @@
     opacity: 1;
     transform: translate(0);
   }
+
   50% {
     opacity: 0;
     transform: translate(0);
   }
+
   51% {
     color: #fff;
     opacity: 0;
     transform: translate(-30px);
   }
+
   100% {
     color: #fff;
     opacity: 1;
@@ -82,15 +83,18 @@
     opacity: 1;
     transform: translate(0);
   }
+
   50% {
     color: #fff;
     opacity: 0;
     transform: translate(0);
   }
+
   51% {
     opacity: 0;
     transform: translate(30px);
   }
+
   100% {
     opacity: 1;
     transform: translate(0);

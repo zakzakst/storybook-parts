@@ -1,7 +1,9 @@
 .module {
   container-type: inline-size;
+
   > li {
     border-bottom: 1px solid #e4e4e4;
+
     &:first-child {
       border-top: 1px solid #e4e4e4;
     }
@@ -12,19 +14,18 @@
   position: relative;
   display: block;
   padding: 23px 4%;
+
   &::before {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     z-index: -1;
     content: "";
-    background: #ffff00;
-    transition: transform 0.5s;
+    background: #ff0;
     transform: scaleX(0);
     transform-origin: right;
+    transition: transform 0.5s;
   }
+
   &:hover {
     &::before {
       transform: scaleX(1);
@@ -36,6 +37,7 @@
 .linkInner {
   position: relative;
   color: #000;
+
   &::before {
     position: absolute;
     top: 0;
@@ -54,6 +56,7 @@
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 0.05em;
+
   & > span {
     display: block;
     font-size: 14px;

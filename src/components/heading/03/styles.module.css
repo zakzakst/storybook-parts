@@ -1,6 +1,6 @@
 .module {
-  font-family: YuGothic, 游ゴシック, "ヒラギノ角ゴ Pro W3",
-    "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  font-family: YuGothic, "游ゴシック", "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif;
   color: #3f3f3f;
 }
 
@@ -15,6 +15,7 @@
 .description {
   position: relative;
   margin-top: 56px;
+
   &::before {
     position: absolute;
     top: calc(-56px / 2 - 2px);
@@ -45,11 +46,9 @@
   .description {
     margin-top: 0;
     margin-left: 134px;
+
     &::before {
-      top: 6px;
-      right: auto;
-      bottom: 6px;
-      left: calc(-134px / 2);
+      inset: 6px auto 6px calc(-134px / 2);
       display: block;
       width: 3px;
       height: auto;

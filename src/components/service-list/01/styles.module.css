@@ -1,8 +1,8 @@
 .module {
   display: grid;
   grid-template-columns: repeat(auto-fit, 280px);
-  justify-content: center;
   gap: 32px 16px;
+  justify-content: center;
 }
 
 .link {
@@ -11,12 +11,10 @@
   aspect-ratio: 1 / 1;
   background: #333;
   border-radius: 50%;
+
   &::before {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     z-index: 2;
     display: flex;
     align-items: center;
@@ -32,24 +30,18 @@
 
   &::after {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     z-index: 1;
     content: "";
     background: #000;
     border-radius: 50%;
-    transition: all 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
     transform: scale(0);
+    transition: all 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
   }
 
   > img {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     display: block;
     width: 50%;
     height: 50%;

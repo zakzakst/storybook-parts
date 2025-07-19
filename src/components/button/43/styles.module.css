@@ -1,23 +1,23 @@
 .button {
   position: relative;
+  z-index: 1;
   display: block;
   width: 320px;
   height: 64px;
   padding: 2px;
-  border-radius: 9999px;
   background: linear-gradient(135deg, #6fa24a, #15a1cc);
-  z-index: 1;
+  border-radius: 9999px;
 
   &::before {
     position: absolute;
     inset: 0;
+    z-index: -1;
     display: block;
     content: "";
-    filter: blur(8px);
     background: linear-gradient(135deg, #6fa24a, #15a1cc);
     border-radius: 9999px;
-    z-index: -1;
     opacity: 0;
+    filter: blur(8px);
   }
 
   @media (any-hover: hover) {
@@ -25,6 +25,7 @@
       transition: opacity 0.3s;
       will-change: filter;
     }
+
     &:hover::before {
       opacity: 1;
     }
@@ -33,10 +34,10 @@
 
 .inner {
   display: flex;
-  width: 100%;
-  height: 100%;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
   background: #fff;
   border-radius: 100vmax;
 }

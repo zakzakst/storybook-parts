@@ -40,7 +40,7 @@
     &::before {
       width: calc(100% + 30px);
       background-color: #333;
-      box-shadow: 0 5px 13px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 5px 13px rgb(0 0 0 / 15%);
     }
   }
 }
