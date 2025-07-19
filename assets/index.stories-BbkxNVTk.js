@@ -1,0 +1,8 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{c as p}from"./clsx-B-dksMZM.js";const g="_card_6awks_1",u="_tag_6awks_13",_="_thumbnail_6awks_35",x="_body_6awks_65",b="_heading_6awks_73",y="_content_6awks_87",e={card:g,tag:u,thumbnail:_,body:x,heading:b,content:y},c=({className:o,tag:i,thumbnail:d,heading:m,content:l,...h})=>t.jsxs("a",{className:p(e.card,o),...h,children:[t.jsxs("div",{children:[t.jsx("div",{className:e.tag,children:i}),t.jsx("div",{className:e.thumbnail,children:t.jsx("img",{src:d,alt:""})})]}),t.jsxs("div",{className:e.body,children:[t.jsx("h3",{className:e.heading,children:m}),t.jsx("div",{className:e.content,children:l})]})]});c.__docgenInfo={description:"",methods:[],displayName:"Card09",props:{tag:{required:!0,tsType:{name:"string"},description:""},thumbnail:{required:!0,tsType:{name:"string"},description:""},heading:{required:!0,tsType:{name:"string"},description:""},content:{required:!0,tsType:{name:"ReactReactNode",raw:"React.ReactNode"},description:""}}};const f={title:"Card/09",component:c,argTypes:{tag:{control:"text"},heading:{control:"text"}},args:{href:"#"}},s={args:{tag:"カード09",thumbnail:"https://picsum.photos/400/200",heading:"タイトルがはいります",content:"テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"}};var a,n,r;s.parameters={...s.parameters,docs:{...(a=s.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {
+    tag: "カード09",
+    thumbnail: "https://picsum.photos/400/200",
+    heading: "タイトルがはいります",
+    content: "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+  }
+}`,...(r=(n=s.parameters)==null?void 0:n.docs)==null?void 0:r.source}}};const w=["Default"];export{s as Default,w as __namedExportsOrder,f as default};

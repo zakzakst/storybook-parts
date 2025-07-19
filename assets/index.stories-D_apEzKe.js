@@ -1,0 +1,8 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{c as m}from"./clsx-B-dksMZM.js";const h="_card_cq86o_1",_="_tag_cq86o_17",u="_icon_cq86o_39",x="_heading_cq86o_61",j="_content_cq86o_75",N="_button_cq86o_87",e={card:h,tag:_,icon:u,heading:x,content:j,button:N},o=({className:r,tag:i,icon:d,heading:p,content:g,...l})=>t.jsxs("a",{className:m(e.card,r),...l,children:[t.jsx("p",{className:e.tag,children:i}),t.jsx("div",{className:e.icon,children:t.jsx("img",{src:d,width:"350",height:"350",alt:""})}),t.jsx("h3",{className:e.heading,children:p}),t.jsx("div",{className:e.content,children:g}),t.jsx("div",{className:e.button})]});o.__docgenInfo={description:"",methods:[],displayName:"Card02",props:{tag:{required:!0,tsType:{name:"string"},description:""},icon:{required:!0,tsType:{name:"string"},description:""},heading:{required:!0,tsType:{name:"string"},description:""},content:{required:!0,tsType:{name:"ReactReactNode",raw:"React.ReactNode"},description:""}}};const y={title:"Card/02",component:o,argTypes:{tag:{control:"text"},heading:{control:"text"}},args:{href:"#"}},n={args:{tag:"タグが入ります",icon:"http://placehold.jp/350x350.png?text=ICON",heading:"見出しが入ります",content:"テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"}};var a,c,s;n.parameters={...n.parameters,docs:{...(a=n.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {
+    tag: "タグが入ります",
+    icon: "http://placehold.jp/350x350.png?text=ICON",
+    heading: "見出しが入ります",
+    content: "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+  }
+}`,...(s=(c=n.parameters)==null?void 0:c.docs)==null?void 0:s.source}}};const C=["Default"];export{n as Default,C as __namedExportsOrder,y as default};

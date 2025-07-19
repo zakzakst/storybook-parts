@@ -1,0 +1,9 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{c as g}from"./clsx-B-dksMZM.js";const u="_card_1aq9i_1",_="_head_1aq9i_29",x="_thumbnail_1aq9i_39",q="_date_1aq9i_83",j="_tag_1aq9i_101",N="_heading_1aq9i_113",y="_content_1aq9i_123",t={card:u,head:_,thumbnail:x,date:q,tag:j,heading:N,content:y},c=({className:i,thumbnail:d,date:o,tag:m,heading:h,content:l,...p})=>e.jsxs("a",{className:g(t.card,i),...p,children:[e.jsxs("div",{className:t.head,children:[e.jsx("div",{className:t.thumbnail,children:e.jsx("img",{src:d,alt:""})}),e.jsx("p",{className:t.date,children:o})]}),e.jsx("p",{className:t.tag,children:m}),e.jsx("h3",{className:t.heading,children:h}),e.jsx("div",{className:t.content,children:l})]});c.__docgenInfo={description:"",methods:[],displayName:"Card06",props:{thumbnail:{required:!0,tsType:{name:"string"},description:""},date:{required:!0,tsType:{name:"string"},description:""},tag:{required:!0,tsType:{name:"string"},description:""},heading:{required:!0,tsType:{name:"string"},description:""},content:{required:!0,tsType:{name:"ReactReactNode",raw:"React.ReactNode"},description:""}}};const T={title:"Card/06",component:c,argTypes:{date:{control:"text"},tag:{control:"text"},heading:{control:"text"}},args:{href:"#"}},a={args:{thumbnail:"https://picsum.photos/400/200",date:"2020.10.01",tag:"お知らせ",heading:"タイトルが入ります",content:"テキストが入ります。テキストが入ります。テキストが入ります。"}};var s,n,r;a.parameters={...a.parameters,docs:{...(s=a.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  args: {
+    thumbnail: "https://picsum.photos/400/200",
+    date: "2020.10.01",
+    tag: "お知らせ",
+    heading: "タイトルが入ります",
+    content: "テキストが入ります。テキストが入ります。テキストが入ります。"
+  }
+}`,...(r=(n=a.parameters)==null?void 0:n.docs)==null?void 0:r.source}}};const R=["Default"];export{a as Default,R as __namedExportsOrder,T as default};

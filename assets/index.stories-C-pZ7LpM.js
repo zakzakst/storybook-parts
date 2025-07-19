@@ -1,0 +1,8 @@
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{c as p}from"./clsx-B-dksMZM.js";const u="_card_1pif0_1",g="_content_1pif0_11",_="_num_1pif0_27",x="_heading_1pif0_39",f="_headingEn_1pif0_89",E="_thumbnail_1pif0_137",e={card:u,content:g,num:_,heading:x,headingEn:f,thumbnail:E},r=({className:c,num:d,heading:o,headingEn:m,thumbnail:h,...l})=>n.jsxs("a",{className:p(e.card,c),...l,children:[n.jsxs("div",{className:e.content,children:[n.jsx("div",{className:e.num,children:d}),n.jsx("div",{className:e.heading,children:n.jsx("span",{children:o})}),n.jsx("div",{className:e.headingEn,children:n.jsx("span",{children:m})})]}),n.jsx("div",{className:e.thumbnail,children:n.jsx("img",{src:h,alt:""})})]});r.__docgenInfo={description:"",methods:[],displayName:"Card18",props:{num:{required:!0,tsType:{name:"string"},description:""},heading:{required:!0,tsType:{name:"string"},description:""},headingEn:{required:!0,tsType:{name:"string"},description:""},thumbnail:{required:!0,tsType:{name:"string"},description:""}}};const y={title:"Card/18",component:r,argTypes:{num:{control:"text"},heading:{control:"text"},headingEn:{control:"text"}},args:{href:"#"}},s={args:{num:"01",heading:"タイトルが入ります",headingEn:"English title",thumbnail:"https://picsum.photos/600/200"}};var t,i,a;s.parameters={...s.parameters,docs:{...(t=s.parameters)==null?void 0:t.docs,source:{originalSource:`{
+  args: {
+    num: "01",
+    heading: "タイトルが入ります",
+    headingEn: "English title",
+    thumbnail: "https://picsum.photos/600/200"
+  }
+}`,...(a=(i=s.parameters)==null?void 0:i.docs)==null?void 0:a.source}}};const N=["Default"];export{s as Default,N as __namedExportsOrder,y as default};

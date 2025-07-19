@@ -1,0 +1,6 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{c as i}from"./clsx-B-dksMZM.js";const d="_button_1anlv_1",h="_text_1anlv_33",_="_hoverText_1anlv_35",v="_arrow_1anlv_83",r={button:d,text:h,hoverText:_,arrow:v},p=({text:l,hoverText:x,className:m,...u})=>t.jsxs("a",{className:i(r.button,m),...u,children:[t.jsx("span",{className:r.text,children:l.split("").map((o,e)=>t.jsx("span",{style:{"--char-num":e},children:o},e))}),t.jsx("span",{className:r.hoverText,children:x.split("").map((o,e)=>t.jsx("span",{style:{"--char-num":e},children:o},e))}),t.jsx("span",{className:r.arrow})]});p.__docgenInfo={description:"",methods:[],displayName:"Button09",props:{text:{required:!0,tsType:{name:"string"},description:""},hoverText:{required:!0,tsType:{name:"string"},description:""}}};const j={title:"Button/09",component:p,argTypes:{text:{control:"text"},hoverText:{control:"text"}},args:{href:"#"}},s={args:{text:"Button09",hoverText:"ボタン09"}};var n,a,c;s.parameters={...s.parameters,docs:{...(n=s.parameters)==null?void 0:n.docs,source:{originalSource:`{
+  args: {
+    text: "Button09",
+    hoverText: "ボタン09"
+  }
+}`,...(c=(a=s.parameters)==null?void 0:a.docs)==null?void 0:c.source}}};const f=["Default"];export{s as Default,f as __namedExportsOrder,j as default};

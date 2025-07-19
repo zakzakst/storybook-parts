@@ -1,0 +1,5 @@
+import{j as o}from"./jsx-runtime-D_zvdyIk.js";import{c as m}from"./clsx-B-dksMZM.js";const p="_button_bzub4_1",_="_icon_bzub4_13",d="_iconDot_bzub4_39",b="_iconArrow_bzub4_85",s={button:p,icon:_,iconDot:d,iconArrow:b},a=({className:i,children:l,...u})=>o.jsxs("a",{className:m(s.button,i),...u,children:[l,o.jsxs("span",{className:s.icon,children:[o.jsx("span",{className:s.iconDot,children:Array(3).fill(null).map((x,t)=>o.jsx("span",{style:{"--dot-num":t}},t))}),o.jsx("span",{className:s.iconArrow})]})]});a.__docgenInfo={description:"",methods:[],displayName:"Button16"};const j={title:"Button/16",component:a,argTypes:{children:{control:"text"}},args:{href:"#"}},n={args:{children:"BUTTON16"}};var r,c,e;n.parameters={...n.parameters,docs:{...(r=n.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  args: {
+    children: "BUTTON16"
+  }
+}`,...(e=(c=n.parameters)==null?void 0:c.docs)==null?void 0:e.source}}};const N=["Default"];export{n as Default,N as __namedExportsOrder,j as default};

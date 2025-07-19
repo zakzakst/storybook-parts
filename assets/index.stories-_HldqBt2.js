@@ -1,0 +1,6 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{c as m}from"./clsx-B-dksMZM.js";const l="_module_1q8ho_1",g="_heading_1q8ho_13",h="_description_1q8ho_29",r={module:l,heading:g,description:h},a=({className:n,heading:d,description:c,...p})=>e.jsxs("hgroup",{className:m(r.module,n),...p,children:[e.jsx("h3",{className:r.heading,children:d}),e.jsx("p",{className:r.description,children:c})]});a.__docgenInfo={description:"",methods:[],displayName:"Heading03",props:{heading:{required:!0,tsType:{name:"string"},description:""},description:{required:!0,tsType:{name:"string"},description:""}}};const x={title:"Heading/03",component:a,decorators:[n=>e.jsx("div",{style:{containerType:"inline-size"},children:e.jsx(n,{})})]},s={args:{heading:"見出し03",description:"テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"}};var i,o,t;s.parameters={...s.parameters,docs:{...(i=s.parameters)==null?void 0:i.docs,source:{originalSource:`{
+  args: {
+    heading: "見出し03",
+    description: "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+  }
+}`,...(t=(o=s.parameters)==null?void 0:o.docs)==null?void 0:t.source}}};const j=["Default"];export{s as Default,j as __namedExportsOrder,x as default};

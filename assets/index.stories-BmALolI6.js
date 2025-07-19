@@ -1,0 +1,6 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{c as l}from"./clsx-B-dksMZM.js";const p="_card_sy86z_1",u="_thumbnail_sy86z_17",x="_borderContainer_sy86z_43",b="_border_sy86z_43",_="_text_sy86z_165",r={card:p,thumbnail:u,borderContainer:x,border:b,text:_},n=({className:d,thumbnail:c,text:i,...m})=>t.jsxs("a",{className:l(r.card,d),...m,children:[t.jsx("div",{className:r.thumbnail,children:t.jsx("img",{src:c,alt:""})}),t.jsxs("div",{className:r.borderContainer,children:[t.jsx("div",{className:r.border,"data-border-pos":"top-right"}),t.jsx("div",{className:r.border,"data-border-pos":"bottom-left"})]}),t.jsx("div",{className:r.text,children:i})]});n.__docgenInfo={description:"",methods:[],displayName:"Card19",props:{thumbnail:{required:!0,tsType:{name:"string"},description:""},text:{required:!0,tsType:{name:"string"},description:""}}};const y={title:"Card/19",component:n,argTypes:{text:{control:"text"}},args:{href:"#"}},s={args:{thumbnail:"https://picsum.photos/400/400",text:"VIEW"}};var e,a,o;s.parameters={...s.parameters,docs:{...(e=s.parameters)==null?void 0:e.docs,source:{originalSource:`{
+  args: {
+    thumbnail: "https://picsum.photos/400/400",
+    text: "VIEW"
+  }
+}`,...(o=(a=s.parameters)==null?void 0:a.docs)==null?void 0:o.source}}};const j=["Default"];export{s as Default,j as __namedExportsOrder,y as default};
