@@ -4,8 +4,7 @@ https://zakzakst.github.io/parts/components/detail/service-list01.html
 
 ### やること
 
-- gh-pages 設定
-- linter を設定（stylelint も）
+- linter を設定
 - サイドバーのカテゴリー展開デフォルトは閉じるようにする方法調べる
 - デザインを参考にしたページの URL の記載方法考える
 - フォントファミリーの反映
