@@ -1,22 +1,19 @@
 .button {
   position: relative;
   display: inline-block;
+  min-width: 240px;
   padding: 16px;
+  overflow: hidden;
+  color: #fff;
   text-align: center;
   background: #000;
   border-radius: 100vmax;
-  color: #fff;
-  min-width: 240px;
-  overflow: hidden;
 
   &::before {
-    top: 0;
-    bottom: 0;
-    left: -30px;
-    right: 0;
     position: absolute;
+    inset: 0 0 0 -30px;
     content: "";
-    background: url(https://picsum.photos/id/29/400/200);
+    background: url("https://picsum.photos/id/29/400/200");
     background-size: cover;
     opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
@@ -24,6 +21,7 @@
 
   &:hover {
     color: #fff;
+
     &::before {
       opacity: 0.5;
       transform: translateX(30px);

@@ -18,6 +18,7 @@
 .thumbnail {
   width: calc(50% - 10px);
   overflow: hidden;
+
   > img {
     width: 100%;
     height: 100%;
@@ -45,6 +46,7 @@
   right: 0;
   bottom: 20px;
   display: block;
+
   > span {
     position: absolute;
     right: 0;
@@ -55,26 +57,32 @@
     background: #0a3da0;
     border-radius: 2px;
     transition: all 0.15s cubic-bezier(0.47, 0, 0.745, 0.715);
+
     &:nth-child(1) {
       right: 0;
       bottom: 0;
     }
+
     &:nth-child(2) {
       right: 6px;
       bottom: 0;
     }
+
     &:nth-child(3) {
       right: 12px;
       bottom: 0;
     }
+
     &:nth-child(4) {
       right: 0;
       bottom: 6px;
     }
+
     &:nth-child(5) {
       right: 6px;
       bottom: 6px;
     }
+
     &:nth-child(6) {
       right: 0;
       bottom: 12px;
@@ -124,22 +132,27 @@
       right: 0;
       bottom: 0;
     }
+
     &:nth-child(2) {
       right: 0;
       bottom: 0;
     }
+
     &:nth-child(3) {
       right: 6px;
       bottom: 0;
     }
+
     &:nth-child(4) {
       right: 0;
       bottom: 0;
     }
+
     &:nth-child(5) {
       right: 0;
       bottom: 0;
     }
+
     &:nth-child(6) {
       right: 0;
       bottom: 6px;

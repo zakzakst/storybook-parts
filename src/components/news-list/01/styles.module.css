@@ -1,6 +1,6 @@
 .module {
-  font-size: 13px;
   container-type: inline-size;
+  font-size: 13px;
 }
 
 .link {
@@ -8,6 +8,7 @@
   padding: 4px 0;
   color: #000;
   transition: opacity 0.2s ease-out;
+
   &:hover {
     opacity: 0.55;
   }
@@ -22,6 +23,7 @@
   font-size: 15px;
   font-weight: bold;
   line-height: 30px;
+
   &::before {
     position: absolute;
     top: 0;
@@ -53,6 +55,7 @@
 
   .linkDate {
     padding: 0 25px 0 0;
+
     &::before {
       right: 0;
       left: auto;

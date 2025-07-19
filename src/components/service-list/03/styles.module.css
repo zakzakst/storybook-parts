@@ -6,15 +6,17 @@
   background-image: linear-gradient(
     270deg,
     transparent 50%,
-    rgba(164, 170, 182, 0.1) 0
+    rgb(164 170 182 / 10%) 0
   );
   background-position: 100% top;
   background-size: 200% 100%;
   border-top: 1px solid #d7dbe3;
   transition: background-position 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+
   &:last-child {
     border-bottom: 1px solid #d7dbe3;
   }
+
   &:hover {
     background-position: 0 top;
   }
@@ -23,6 +25,7 @@
 .icon {
   height: 40px;
   padding-top: 10px;
+
   & > img {
     width: auto;
     height: 100%;
@@ -37,7 +40,7 @@
 .textEn {
   display: block;
   margin-bottom: 2px;
-  font-family: "Barlow", sans-serif;
+  font-family: Barlow, sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
@@ -58,6 +61,7 @@
   height: 9px;
   margin: auto;
   transform: rotate(135deg);
+
   & > span {
     position: absolute;
     top: 0;
@@ -68,9 +72,11 @@
     background: #0c0c0c;
     border-radius: 50%;
     transition: all 0.15s cubic-bezier(0.47, 0, 0.745, 0.715);
+
     &:nth-child(2) {
       top: 6px;
     }
+
     &:nth-child(3) {
       left: 6px;
     }
@@ -82,6 +88,7 @@
     &:nth-child(2) {
       top: 0;
     }
+
     &:nth-child(3) {
       left: 0;
     }

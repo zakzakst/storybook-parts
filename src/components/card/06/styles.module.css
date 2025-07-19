@@ -19,18 +19,15 @@
 
 .thumbnail {
   position: relative;
+  aspect-ratio: 2 / 1;
   overflow: hidden;
   border-radius: 5px;
-  aspect-ratio: 2 / 1;
 
   &::before {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     content: "";
-    background: rgba(0, 0, 0, 0.1);
+    background: rgb(0 0 0 / 10%);
     opacity: 0;
     transition: opacity 0.5s cubic-bezier(0.77, 0, 0.18, 1);
   }
@@ -54,7 +51,7 @@
 .tag {
   margin-top: 20px;
   font-size: 11px;
-  color: rgba(102, 102, 102, 0.8);
+  color: rgb(102 102 102 / 80%);
 }
 
 .heading {

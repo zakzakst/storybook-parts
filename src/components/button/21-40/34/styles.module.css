@@ -3,21 +3,19 @@
   display: block;
   width: 40px;
   height: 40px;
-  border: none;
   background: initial;
+  border: none;
 }
 
 .arrow {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   display: block;
   height: 1px;
   margin: auto;
   content: "";
   background: #000;
+
   &::before {
     position: absolute;
     top: 0;
@@ -43,11 +41,11 @@
   overflow: visible;
   fill: none;
   stroke: #757575;
+  stroke-width: 1px;
   stroke-dasharray: 119.4 119.4;
   stroke-dashoffset: 119.4;
-  stroke-width: 1px;
-  transition: stroke-dashoffset 0.5s linear;
   transform: translateX(50%);
+  transition: stroke-dashoffset 0.5s linear;
 }
 
 :where(.button:hover) {

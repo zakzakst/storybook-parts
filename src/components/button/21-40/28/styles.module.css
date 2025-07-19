@@ -11,20 +11,14 @@
   }
 
   &::before {
-    top: 0;
-    right: 16px;
-    bottom: 16px;
-    left: 0;
+    inset: 0 16px 16px 0;
     border-top: 1px solid #87c870;
     border-left: 1px solid #87c870;
     border-top-left-radius: 8px;
   }
 
   &::after {
-    top: 16px;
-    right: 0;
-    bottom: 0;
-    left: 16px;
+    inset: 16px 0 0 16px;
     border-right: 1px solid #87c870;
     border-bottom: 1px solid #87c870;
     border-bottom-right-radius: 8px;
@@ -36,6 +30,7 @@
     display: inline-block;
     padding: 0 32px;
     font-size: 16px;
+
     &::before {
       position: absolute;
       top: 0;

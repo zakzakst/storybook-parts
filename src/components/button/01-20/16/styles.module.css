@@ -19,13 +19,11 @@
 
 .iconDot {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+
   > span {
     display: inline-block;
     width: 3px;
@@ -35,6 +33,7 @@
     border-radius: 50%;
     transition: transform 0.45s;
     transition-delay: calc(var(--dot-num) * 0.12s);
+
     &:first-child {
       margin-left: 0;
     }
@@ -43,10 +42,7 @@
 
 .iconArrow {
   position: absolute;
-  top: 0;
-  right: 4px;
-  bottom: 0;
-  left: 0;
+  inset: 0 4px 0 0;
   display: block;
   width: 7px;
   height: 7px;
@@ -54,8 +50,8 @@
   border: 2px solid #fff;
   border-bottom-color: transparent;
   border-left-color: transparent;
-  transition: transform 0.45s;
   transform: translateY(30px) rotate(45deg);
+  transition: transform 0.45s;
 }
 
 :where(.button:hover) {

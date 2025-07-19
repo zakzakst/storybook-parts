@@ -8,6 +8,7 @@
   font-size: 24px;
   border-bottom: 1px solid #000;
   transition: color 0.4s ease-out;
+
   &::after {
     position: absolute;
     top: 0;
@@ -17,12 +18,14 @@
     height: 420%;
     content: "";
     background: #000;
-    transition: transform 0.4s ease-out;
     transform: skewY(-30deg) scaleY(0);
     transform-origin: left bottom;
+    transition: transform 0.4s ease-out;
   }
+
   &:hover {
     color: #fff;
+
     &::after {
       transform: skewY(-30deg) scaleY(1);
       transform-origin: left top;
@@ -34,6 +37,7 @@
   position: relative;
   z-index: 1;
   display: block;
+
   & > span {
     display: inline-block;
   }
@@ -50,6 +54,7 @@
   height: 11px;
   margin: auto 0;
   transition: transform 0.4s ease-out;
+
   &::before,
   &::after {
     position: absolute;
@@ -57,6 +62,7 @@
     content: "";
     transition: all 0.4s ease-out;
   }
+
   &::before {
     top: 50%;
     right: 0;
@@ -65,6 +71,7 @@
     background: #000;
     transform: translateY(-50%);
   }
+
   &::after {
     top: 0;
     right: 1px;
@@ -80,20 +87,23 @@
 
 :where(.button:hover) {
   .text {
-    transition: transform 0.5s ease-out;
     transform: translateY(8px);
+    transition: transform 0.5s ease-out;
+
     & > span {
-      transition: transform 0.5s ease;
       transform: translateY(-8px);
+      transition: transform 0.5s ease;
       transition-delay: calc(var(--char-num) * 0.05s);
     }
   }
 
   .arrow {
     transform: translateX(8px);
+
     &::before {
       background: #fff;
     }
+
     &::after {
       border-top-color: #fff;
       border-right-color: #fff;

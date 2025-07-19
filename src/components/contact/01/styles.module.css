@@ -5,20 +5,20 @@
   color: #fff;
   text-align: center;
   background: #1236e6;
+
   &::before {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     content: "";
     background: #082ad0;
-    transition: transform 0.8s cubic-bezier(0.65, 0.05, 0.35, 1);
     transform: scaleX(0);
     transform-origin: right;
+    transition: transform 0.8s cubic-bezier(0.65, 0.05, 0.35, 1);
   }
+
   &:hover {
     color: #fff;
+
     &::before {
       transform: scaleX(1);
       transform-origin: left;
@@ -37,7 +37,7 @@
   position: relative;
   z-index: 1;
   margin-bottom: 25px;
-  font-family: "Barlow", sans-serif;
+  font-family: Barlow, sans-serif;
   font-size: 50px;
   font-weight: 600;
   line-height: 1;
@@ -63,19 +63,17 @@
   margin: auto;
   border: 2px solid #fff;
   border-radius: 50%;
+
   &::before {
     position: absolute;
-    top: 0;
-    right: 50%;
-    bottom: 0;
-    left: -50%;
+    inset: 0 50% 0 -50%;
     display: block;
     height: 2px;
     margin: auto;
     content: "";
     background: #fff;
-    transition: transform 0.4s cubic-bezier(0.65, 0.05, 0.35, 1);
     transform: translateX(-10px);
+    transition: transform 0.4s cubic-bezier(0.65, 0.05, 0.35, 1);
   }
 }
 

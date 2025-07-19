@@ -1,14 +1,15 @@
 .details {
   padding: 0 16px;
   border-bottom: 1px solid #272727;
+
   &:first-child {
     border-top: 1px solid #272727;
   }
 }
 
 .summary {
-  display: block;
   position: relative;
+  display: block;
   padding: 20px 0;
   cursor: pointer;
 }
@@ -29,7 +30,6 @@
       #e60000 100%
     );
     background-position: 200% 0;
-    -webkit-background-clip: text;
     background-clip: text;
     background-size: 200% 100%;
     animation: accordion01TextMaskOut 0.6s cubic-bezier(0.23, 1, 0.32, 1)
@@ -39,10 +39,10 @@
 }
 
 .summarySubText {
+  display: block;
   margin-top: 8px;
   font-size: 14px;
   color: #8e8e8e;
-  display: block;
 }
 
 .summaryIcon {
@@ -55,13 +55,11 @@
   height: 26px;
   margin: auto;
   content: "";
+
   &::before,
   &::after {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     display: block;
     height: 3px;
     margin: auto;
@@ -69,9 +67,10 @@
     background: #000;
     transition: background-color 0.3s;
   }
+
   &::after {
-    transition: all 0.3s;
     transform: rotate(90deg);
+    transition: all 0.3s;
   }
 }
 
@@ -82,14 +81,15 @@
 .contentInner {
   padding-bottom: 16px;
   opacity: 0;
-  transition: all 0.3s;
   transform: translateY(4px);
+  transition: all 0.3s;
 }
 
 :where(.details:hover) {
   .summaryText > span {
     animation: accordion01TextMask 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
   }
+
   .summaryIcon::before,
   .summaryIcon::after {
     background: #e60000;
@@ -100,15 +100,17 @@
   .summaryText > span {
     animation: accordion01TextMask 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
   }
+
   .summaryIcon::before,
   .summaryIcon::after {
     background: #e60000;
     transform: rotate(0);
   }
+
   .contentInner {
     opacity: 1;
-    transition-delay: 0.5s;
     transform: translateY(0);
+    transition-delay: 0.5s;
   }
 }
 
@@ -116,7 +118,8 @@
   0% {
     background-position: 200% 0;
   }
-  to {
+
+  100% {
     background-position: 100% 0;
   }
 }
@@ -125,7 +128,8 @@
   0% {
     background-position: 100% 0;
   }
-  to {
+
+  100% {
     background-position: 0 0;
   }
 }

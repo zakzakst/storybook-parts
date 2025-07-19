@@ -3,6 +3,7 @@
   padding: 15px 10px;
   font-size: 13px;
   font-weight: bold;
+
   &::before {
     position: absolute;
     right: 0;
@@ -12,9 +13,10 @@
     height: 20px;
     content: "";
     background: #e6c9a1;
-    transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
     transform-origin: bottom right;
+    transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
+
   &:hover {
     &::before {
       transform: scaleX(0);

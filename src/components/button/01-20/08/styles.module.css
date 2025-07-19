@@ -6,6 +6,7 @@
   font-size: 16px;
   color: #989898;
   transition: color 0s ease 0.1s;
+
   &::before,
   &::after {
     position: absolute;
@@ -18,17 +19,21 @@
     margin: auto 0;
     content: "";
   }
+
   &::before {
     background: #d5d5d5;
   }
+
   &::after {
     background: #171e27;
-    transition: transform 0.3s;
     transform: scale(0.1, 1);
     transform-origin: left;
+    transition: transform 0.3s;
   }
+
   &:hover {
     color: #171e27;
+
     &::after {
       transform: scale(1);
     }

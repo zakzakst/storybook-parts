@@ -9,15 +9,12 @@
   text-align: center;
   letter-spacing: 1px;
   background-color: #fff;
-  box-shadow: 8px 13px 15px rgba(141, 135, 132, 0.18);
+  box-shadow: 8px 13px 15px rgb(141 135 132 / 18%);
   transition: box-shadow 0.5s, color 0.5s;
 
   &::before {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     display: block;
     width: 10px;
     height: 10px;
@@ -25,8 +22,8 @@
     content: "";
     background: #ce009f;
     border-radius: 50%;
-    transition: transform 0.5s;
     transform: scale(0);
+    transition: transform 0.5s;
   }
 
   > span {
@@ -34,8 +31,9 @@
     z-index: 1;
     display: inline-block;
     padding: 0 12px;
-    transition: transform 0.5s;
     transform: translateX(-16px);
+    transition: transform 0.5s;
+
     &::before {
       position: absolute;
       top: 0;
@@ -53,12 +51,15 @@
 
   &:hover {
     color: #fff;
-    box-shadow: 0 7px 15px rgba(95, 20, 78, 0.3);
+    box-shadow: 0 7px 15px rgb(95 20 78 / 30%);
+
     &::before {
       transform: scale(30);
     }
+
     > span {
       transform: translateX(0);
+
       &::before {
         opacity: 0;
       }

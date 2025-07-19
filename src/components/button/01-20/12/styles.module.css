@@ -9,22 +9,22 @@
   font-weight: 600;
   border: 1px solid #000;
   transition: border-color 0.3s cubic-bezier(0.45, 0.05, 0.3, 0.93);
+
   &::before {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     z-index: -1;
     display: block;
     content: "";
     background: #fdcf10;
-    transition: transform 0.3s cubic-bezier(0.45, 0.05, 0.3, 0.93);
     transform: scaleX(0);
     transform-origin: right;
+    transition: transform 0.3s cubic-bezier(0.45, 0.05, 0.3, 0.93);
   }
+
   &:hover {
     border-color: #fdcf10;
+
     &::before {
       transform: scaleX(1);
       transform-origin: left;
@@ -40,6 +40,7 @@
   display: block;
   width: 48px;
   margin: auto 0;
+
   &::before,
   &::after {
     position: absolute;
@@ -50,6 +51,7 @@
     content: "";
     background: #000;
   }
+
   &::before {
     right: 0;
     width: 8px;
@@ -58,6 +60,7 @@
     animation: button12ArrowDot 1.5s cubic-bezier(0.45, 0.05, 0.3, 0.93) 1s
       infinite;
   }
+
   &::after {
     right: 4px;
     left: 0;
@@ -72,14 +75,17 @@
     opacity: 1;
     transform: scale(0);
   }
+
   30% {
     opacity: 1;
     transform: scale(0);
   }
+
   60% {
     opacity: 1;
     transform: scale(1);
   }
+
   100% {
     opacity: 0;
     transform: scale(1);
@@ -91,18 +97,22 @@
     transform: scaleX(0);
     transform-origin: left center;
   }
+
   30% {
     transform: scaleX(1);
     transform-origin: left center;
   }
+
   31% {
     transform: scaleX(1);
     transform-origin: right center;
   }
+
   60% {
     transform: scaleX(0);
     transform-origin: right center;
   }
+
   100% {
     transform: scaleX(0);
     transform-origin: right center;

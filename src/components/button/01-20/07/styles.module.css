@@ -4,14 +4,12 @@
   width: 130px;
   height: 130px;
   background: #0bcdf7;
-  border-radius: 50%;
   border: none;
+  border-radius: 50%;
+
   &::before {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 10px;
+    inset: 0 0 0 10px;
     display: block;
     width: 0;
     height: 0;
@@ -22,6 +20,7 @@
     border-left-color: #e3ff00;
     transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
+
   &::after {
     position: absolute;
     inset: -6px;
@@ -29,13 +28,15 @@
     border: 6px solid #e3ff00;
     border-radius: 50%;
     opacity: 0;
-    transition: 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
     transform: scale(1.1);
+    transition: 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
+
   &:hover {
     &::before {
       transform: scale(1.2);
     }
+
     &::after {
       opacity: 1;
       transform: scale(1);

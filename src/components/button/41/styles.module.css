@@ -38,8 +38,8 @@
     content: "";
     border-top: 1px solid #44c0ed;
     border-right: 1px solid #44c0ed;
-    transition: right 0.2s;
     transform: rotate(45deg);
+    transition: right 0.2s;
   }
 
   > span {
@@ -49,9 +49,11 @@
 
   &:hover {
     color: #44c0ed;
+
     &::before {
       width: 100%;
     }
+
     &::after {
       right: 14px;
     }

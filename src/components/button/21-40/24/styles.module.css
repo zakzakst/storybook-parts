@@ -10,7 +10,7 @@
   color: #fff;
   letter-spacing: 0.5;
   background: linear-gradient(70deg, #2b59d3, #1e429f);
-  box-shadow: 20px 40px 60px rgba(0, 0, 0, 0.4);
+  box-shadow: 20px 40px 60px rgb(0 0 0 / 40%);
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 
   &::after {
@@ -29,7 +29,7 @@
 
   &:hover {
     color: #fff;
-    box-shadow: -20px 40px 60px rgba(0, 0, 0, 0.4);
+    box-shadow: -20px 40px 60px rgb(0 0 0 / 40%);
     opacity: 0.95;
 
     &::after {

@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   width: 300px;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0 6px 0 #e7eafa, 15px 30px 68px rgba(156, 160, 185, 0.56);
   overflow: hidden;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 0 #e7eafa, 15px 30px 68px rgb(156 160 185 / 56%);
 }
 
 .body {
@@ -16,8 +16,9 @@
 .thumbnail {
   width: 45px;
   height: 45px;
-  border-radius: 50%;
   overflow: hidden;
+  border-radius: 50%;
+
   > {
     img {
       width: 100%;
@@ -28,16 +29,16 @@
 }
 
 .heading {
+  margin-top: 12px;
   font-size: 18px;
   font-weight: bold;
-  margin-top: 12px;
-  color: rgb(9, 30, 66);
+  color: rgb(9 30 66);
 }
 
 .content {
-  font-size: 14px;
   margin-top: 12px;
-  color: rgba(9, 30, 66, 0.8);
+  font-size: 14px;
+  color: rgb(9 30 66 / 80%);
 }
 
 .foot {
@@ -55,26 +56,30 @@
   font-size: 12px;
   text-align: center;
   transition: all 0.2s;
+
   + & {
     border-left: 1px solid #e7eafa;
   }
+
   > span {
     position: relative;
     display: inline-block;
+
     &::after {
       position: absolute;
+      top: -2px;
+      left: -8px;
       display: block;
       width: 4px;
       height: 4px;
+      content: "";
       background: #f5a623;
       border-radius: 50%;
-      top: -2px;
-      left: -8px;
-      content: "";
     }
   }
+
   &:hover {
-    background: #456bed;
     color: #fff;
+    background: #456bed;
   }
 }

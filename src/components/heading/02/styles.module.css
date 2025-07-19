@@ -4,6 +4,7 @@
   font-size: 30px;
   line-height: 1.2em;
   color: #363f4d;
+
   &::before {
     position: absolute;
     top: 1em;
@@ -14,10 +15,11 @@
     content: "";
     background: #707070;
   }
+
   > span {
     display: block;
     font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
     font-size: 0.45em;
-    color: #777777;
+    color: #777;
   }
 }

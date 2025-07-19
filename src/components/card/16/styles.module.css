@@ -5,11 +5,12 @@
   overflow: hidden;
   font-family: "Noto Sans JP", sans-serif;
   background: #fff;
-  box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 10px 25px 30px rgb(0 0 0 / 8%);
   transition: background-color 1s, box-shadow 1s;
+
   &:hover {
     background: #ce009f;
-    box-shadow: 0 10px 15px rgba(95, 20, 78, 0.3);
+    box-shadow: 0 10px 15px rgb(95 20 78 / 30%);
   }
 }
 
@@ -18,6 +19,7 @@
   flex-shrink: 0;
   width: 270px;
   overflow: hidden;
+
   > img {
     width: 100%;
     height: 100%;
@@ -32,6 +34,7 @@
   top: 0;
   right: 0;
   bottom: 0;
+
   > svg {
     height: 100%;
     fill: #fff;

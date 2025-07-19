@@ -1,7 +1,7 @@
 .module {
   position: relative;
   padding-bottom: 20px;
-  font-family: "Yu Gothic", "YuGothic", "ヒラギノ角ゴ Pro W3",
+  font-family: "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3",
     "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
   font-size: 12px;
   color: #141c36;
