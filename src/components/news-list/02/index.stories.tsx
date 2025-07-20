@@ -1,6 +1,7 @@
 // https://www.bebit.co.jp/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { NewsList02 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "NewsList/02",

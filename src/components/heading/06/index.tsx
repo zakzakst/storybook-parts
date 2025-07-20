@@ -1,6 +1,8 @@
-import clsx from "clsx";
-import styles from "./styles.module.css";
 import { useState, useEffect } from "react";
+
+import clsx from "clsx";
+
+import styles from "./styles.module.css";
 
 type Props = Omit<React.ComponentProps<"h3">, "children">;
 

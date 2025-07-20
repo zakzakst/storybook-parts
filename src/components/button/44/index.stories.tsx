@@ -1,6 +1,7 @@
 // https://ics.media/entry/230629/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button44 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Button/44",

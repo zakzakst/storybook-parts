@@ -1,6 +1,7 @@
 // https://lavie-enfant.com/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button25 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Button/25",

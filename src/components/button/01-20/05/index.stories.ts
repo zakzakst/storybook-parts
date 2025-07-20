@@ -1,6 +1,7 @@
 // http://www.vntus.jp/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button05 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Button/05",

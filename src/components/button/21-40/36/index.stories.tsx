@@ -1,6 +1,7 @@
 // https://where.inc/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button36 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Button/36",

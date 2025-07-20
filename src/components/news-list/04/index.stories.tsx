@@ -1,6 +1,7 @@
 // https://recruit.i-goods.co.jp/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { NewsList04 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "NewsList/04",

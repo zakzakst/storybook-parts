@@ -1,6 +1,7 @@
 // https://smartdrive.co.jp/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { NewsList05 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "NewsList/05",

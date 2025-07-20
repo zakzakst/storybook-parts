@@ -1,6 +1,7 @@
 // https://www.e-heyaspace.com/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button26 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Button/26",

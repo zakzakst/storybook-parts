@@ -1,6 +1,7 @@
 // https://www.dentist-sato.com/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ServiceList02 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "ServiceList/02",

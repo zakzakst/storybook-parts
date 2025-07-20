@@ -1,6 +1,7 @@
 // https://www.sun-top.jp/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ServiceList06 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "ServiceList/06",
