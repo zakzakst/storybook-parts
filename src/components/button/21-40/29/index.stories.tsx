@@ -1,6 +1,7 @@
 // https://www.elecom.co.jp/pickup/contents/00062/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button29 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Button/29",

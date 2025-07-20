@@ -1,6 +1,7 @@
 // https://www.atamisekaie.jp/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button34 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Button/34",

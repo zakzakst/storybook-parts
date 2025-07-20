@@ -1,6 +1,7 @@
 // https://www.fabric-arts.co.jp/recruit/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Contact03 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Contact/03",

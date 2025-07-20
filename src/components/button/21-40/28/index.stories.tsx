@@ -1,6 +1,7 @@
 // https://yoshida-yakugyo.com/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button28 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Button/28",

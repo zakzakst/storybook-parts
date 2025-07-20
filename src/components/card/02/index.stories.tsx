@@ -1,6 +1,7 @@
 // https://www.teotoriatte.info/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Card02 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Card/02",

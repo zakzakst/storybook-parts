@@ -1,6 +1,7 @@
 // https://www.orikane.co.jp/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Heading05 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Heading/05",

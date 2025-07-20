@@ -1,6 +1,7 @@
 // https://www.project8.co.jp/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Contact01 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Contact/01",

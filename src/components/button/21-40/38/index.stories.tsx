@@ -1,6 +1,7 @@
 // https://www.keyence.co.jp/company/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button38 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Button/38",

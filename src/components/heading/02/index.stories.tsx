@@ -1,6 +1,7 @@
 // https://quantitative.jp/recruit
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Heading02 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Heading/02",

@@ -1,6 +1,7 @@
 // https://marimo-dental.com/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Contact02 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Contact/02",

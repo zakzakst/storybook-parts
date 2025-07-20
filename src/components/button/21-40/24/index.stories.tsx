@@ -1,6 +1,7 @@
 // https://stellacasting.jp/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button24 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Button/24",

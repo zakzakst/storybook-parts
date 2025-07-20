@@ -1,6 +1,7 @@
 // https://www.itoki.jp/special/akimiru/about/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Heading01 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Heading/01",

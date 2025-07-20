@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+
 import styles from "./styles.module.css";
 
 type Accordion01Item = {

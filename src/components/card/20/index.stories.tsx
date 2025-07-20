@@ -1,6 +1,7 @@
 // https://www.tambien.studio/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Card20 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Card/20",

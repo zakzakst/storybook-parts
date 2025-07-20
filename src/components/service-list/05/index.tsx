@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { FaAngleRight } from "react-icons/fa6";
+
 import styles from "./styles.module.css";
 
 type Item = {

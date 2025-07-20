@@ -1,6 +1,7 @@
 // https://leverages.jp/
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Button22 } from ".";
+
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
   title: "Button/22",
