@@ -1,10 +1,32 @@
 // import { Accordion01 } from "./components/accordion/01";
-import { Button37 } from "./components/button/21-40/37";
+import { Card12 } from "./components/card/12";
 
 function App() {
   return (
     <>
-      <Button37>ボタン37</Button37>
+      <Card12 items={[
+        {
+          href: "#",
+          thumbnail: "https://picsum.photos/id/1000/400/200",
+          category: "NEWS",
+          text: "テキストが入ります。テキストが入ります。テキストが入ります。",
+          date: "2021.01.01",
+        },
+        {
+          href: "#",
+          thumbnail: "https://picsum.photos/id/1000/400/200",
+          category: "NEWS",
+          text: "テキストが入ります。テキストが入ります。テキストが入ります。",
+          date: "2021.01.01",
+        },
+        {
+          href: "#",
+          thumbnail: "https://picsum.photos/id/1000/400/200",
+          category: "NEWS",
+          text: "テキストが入ります。テキストが入ります。テキストが入ります。",
+          date: "2021.01.01",
+        },
+      ]} />
       {/* <Accordion01
         items={[
           {
