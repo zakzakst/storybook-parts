@@ -1,6 +1,6 @@
-// TODO: https://zakzakst.github.io/parts/components/detail/button38.html
-import clsx from "clsx";
 import {useState, useRef} from 'react'
+
+import clsx from "clsx";
 
 import styles from "./styles.module.css";
 
@@ -9,27 +9,32 @@ type Props = React.ComponentProps<"button">;
 export const Button37 = ({className, children, ...rest}: Props) => {
   const [isHovered, setIsHovered] = useState(false)
   const [isClicked, setIsClicked] = useState(false)
+  const [circlePos, setCirclePos] = useState<{x: number; y: number}>({x: 0, y: 0})
   const buttonRef = useRef<HTMLButtonElement | null>(null)
 
-  const setCirclePos = (e: React.MouseEvent) => {
-    if (isClicked) return
-    console.log(e.pageX, e.pageY)
-    console.log(buttonRef.current?.getBoundingClientRect())
+  const updateCirclePos = (e: React.MouseEvent) => {
+    if (isClicked || !buttonRef.current) return
+    const clientRect = buttonRef.current.getBoundingClientRect()
+    const pointerX = e.pageX - (clientRect.left + window.pageXOffset);
+    const pointerY = e.pageY - (clientRect.top + window.pageYOffset);
+    const x = pointerX < 0 ? 0 : pointerX > buttonRef.current.clientWidth ? buttonRef.current.clientWidth : pointerX
+    const y = pointerY < 0 ? 0 : pointerY > buttonRef.current.clientHeight ? buttonRef.current.clientHeight : pointerY
+    setCirclePos({x, y})
   }
 
   const onMouseEnter = (e: React.MouseEvent) => {
-    setCirclePos(e)
+    updateCirclePos(e)
     setIsHovered(true)
   }
 
   const onMouseLeave = (e: React.MouseEvent) => {
-    setCirclePos(e)
+    updateCirclePos(e)
     setIsHovered(false)
     setIsClicked(false)
   }
 
   const onMouseMove = (e: React.MouseEvent) => {
-    setCirclePos(e)
+    updateCirclePos(e)
   }
 
   const onClick = () => {
@@ -49,7 +54,7 @@ export const Button37 = ({className, children, ...rest}: Props) => {
       {...rest}
     >
       <span>{children}</span>
-      <span className={styles.circle} />
+      <span className={styles.circle} style={{left: `${circlePos.x}px`, top: `${circlePos.y}px`}} />
     </button>
   )
 }

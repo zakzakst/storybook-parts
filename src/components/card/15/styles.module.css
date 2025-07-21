@@ -47,13 +47,13 @@
     &::before {
       top: 0;
       right: 0;
-      transition-delay: 0.07s * 3;
+      transition-delay: calc(0.07s * 3);
     }
 
     &::after {
       top: 0;
       left: 0;
-      transition-delay: 0.07s * 2;
+      transition-delay: calc(0.07s * 2);
     }
   }
 

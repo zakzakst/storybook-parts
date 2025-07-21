@@ -17,5 +17,4 @@ https://react-icons.github.io/react-icons/
 
 ### あとでやる
 
-- src\components\button\21-40\37\index.tsx
 - src\components\card\12\index.tsx
