@@ -1,11 +1,11 @@
-import { Accordion01 } from "./components/accordion/01";
-import { Card01 } from "./components/card/01";
-// import './App.css'
+// import { Accordion01 } from "./components/accordion/01";
+import { Button37 } from "./components/button/21-40/37";
 
 function App() {
   return (
     <>
-      <Accordion01
+      <Button37>ボタン37</Button37>
+      {/* <Accordion01
         items={[
           {
             id: "1",
@@ -22,12 +22,7 @@ function App() {
             name: "ccordion01",
           },
         ]}
-      />
-      <Card01
-        thumbnail="https://picsum.photos/400/200"
-        textEn="CARD01"
-        textJa="カード01"
-      />
+      /> */}
     </>
   );
 }

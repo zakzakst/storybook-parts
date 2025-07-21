@@ -1,0 +1,49 @@
+.module {
+  position: relative;
+  padding: 36px 48px;
+  overflow: hidden;
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  content: '';
+  background: #fff;
+  border-radius: 50%;
+  mix-blend-mode: exclusion;
+  transition: width 0.3s, height 0.3s;
+  transform: translate(-50%, -50%);
+}
+
+:where(.module[data-hovered='true']) {
+  .circle {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+:where(.module[data-hovered='true'][data-clicked='true']) {
+  .circle {
+    animation: button38Circle 1s forwards;
+  }
+}
+
+@keyframes button38Circle {
+  90% {
+    width: 400px;
+    height: 400px;
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
