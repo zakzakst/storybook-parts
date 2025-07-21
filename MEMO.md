@@ -5,6 +5,8 @@ https://zakzakst.github.io/parts/components/detail/service-list01.html
 ### やること
 
 - linter を設定
+  - eslint.config.jsの対象にstorybook-staticのファイルがはいってしまう
+  - カンマやコロンの設定できない（※prettier必要？）
 - サイドバーのカテゴリー展開デフォルトは閉じるようにする方法調べる
 - デザインを参考にしたページの URL の記載方法考える
 - フォントファミリーの反映

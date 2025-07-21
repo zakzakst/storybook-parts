@@ -5,6 +5,12 @@
     }
   ],
   "settings": {
-    "github.copilot.enable": { "*": false, "typescript": false, "yaml": false }
+    "github.copilot.enable": {
+      "*": false,
+      "typescript": false,
+      "yaml": false
+    },
+    "editor.tabSize": 2,
+    "typescript.format.indentSwitchCase": false
   }
 }
