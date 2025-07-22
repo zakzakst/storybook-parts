@@ -1,6 +1,6 @@
 .heading {
   padding-bottom: 12px;
-  font-family: Metrophobic, sans-serif;
+  font-family: "Metrophobic", sans-serif;
   border-bottom: 1px solid #f2f2f2;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .date {
-  font-family: Metrophobic, sans-serif;
+  font-family: "Metrophobic", sans-serif;
   font-weight: normal;
   color: #00a799;
   transition: all 0.3s;

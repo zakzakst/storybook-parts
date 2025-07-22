@@ -1,7 +1,7 @@
 .card {
   display: block;
   width: 360px;
-  font-family: Roboto, "Noto Sans JP", sans-serif;
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
 }
 
 .tag {
