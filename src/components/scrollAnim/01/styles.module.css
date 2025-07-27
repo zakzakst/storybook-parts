@@ -1,1 +1,8 @@
-.module {}
+.module {
+  opacity: 0;
+
+  & > span {
+    display: inline-block;
+    font-size: 40px;
+  }
+}

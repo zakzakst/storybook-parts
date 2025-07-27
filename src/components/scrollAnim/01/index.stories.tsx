@@ -5,6 +5,17 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 const meta = {
   title: "ScrollAnim/01",
   component: ScrollAnim01,
+  decorators: [
+    (Story) => (
+      <div>
+        <div style={{ height: "100vh" }}>
+          <p style={{ textAlign: "center" }}>▼▼▼ スクロールしてください ▼▼▼</p>
+        </div>
+        <Story />
+        <div style={{ height: "100vh" }} />
+      </div>
+    ),
+  ],
   argTypes: {
     text: { control: "text" },
   },
@@ -16,6 +27,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    text: "テキスト",
+    text: "スクロールアニメーション01",
   },
 };
