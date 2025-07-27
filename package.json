@@ -15,6 +15,7 @@
     "deploy": "rimraf storybook-static && storybook build && gh-pages -d storybook-static --nojekyll"
   },
   "dependencies": {
+    "animejs": "^4.1.1",
     "clsx": "^2.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

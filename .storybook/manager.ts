@@ -1,5 +1,8 @@
 // 参考（余裕あるとき調べてみる）：https://storybook.js.org/docs/configure/user-interface/features-and-behavior
-import { addons, type State } from "storybook/manager-api";
+import {
+  addons,
+  // type State
+} from "storybook/manager-api";
 
 addons.setConfig({
   // navSize: 300,

@@ -11,6 +11,7 @@
       "yaml": false
     },
     "editor.tabSize": 2,
-    "typescript.format.indentSwitchCase": false
+    "typescript.format.indentSwitchCase": false,
+    "cSpell.ignoreWords": ["animejs"]
   }
 }
