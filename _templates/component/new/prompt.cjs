@@ -1,6 +1,6 @@
 const capitalize = (str) => {
   if (typeof str !== "string" || !str) return str;
-  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  return str.charAt(0).toUpperCase() + str.slice(1);
 };
 
 module.exports = {
@@ -24,11 +24,11 @@ module.exports = {
           // "loader",
           // "menu",
           // "modal",
-          "news-list",
+          "newsList",
           // "other",
-          // "scroll-anim",
+          "scrollAnim",
           // "section",
-          "service-list",
+          "serviceList",
           // "start-anim",
           // "utility",
         ],
