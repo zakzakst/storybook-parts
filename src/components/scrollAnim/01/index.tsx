@@ -66,9 +66,7 @@ export const ScrollAnim01 = ({ className, text, ...rest }: Props) => {
     <div ref={root}>
       <div className={clsx("animejs", styles.module, className)} {...rest}>
         {text.split("").map((c, index) => (
-          <span key={index} style={{ ["--char-num" as string]: index }}>
-            {c}
-          </span>
+          <span key={index}>{c}</span>
         ))}
       </div>
     </div>
