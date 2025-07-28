@@ -1,0 +1,28 @@
+.module {
+  position: relative;
+  width: 300px;
+  aspect-ratio: 300 / 200;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    inset: -5% -10%;
+    display: block;
+    content: "";
+    background: #fff;
+    transform: rotate(0.09deg) skewX(10deg);
+  }
+
+  &.isAnimated {
+    &::after {
+      transform: rotate(0deg) skewX(10deg) translateX(-100%);
+      transition: transform 1s cubic-bezier(0.87, 0, 0.13, 1);
+    }
+  }
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

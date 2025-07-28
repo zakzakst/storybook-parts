@@ -1,4 +1,6 @@
 // https://salonia.jp/
+import { ScrollAnimDecorator } from "../../../utils/storybook-decorators";
+
 import { ScrollAnim02 } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react-vite";
@@ -6,17 +8,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 const meta = {
   title: "ScrollAnim/02",
   component: ScrollAnim02,
-  decorators: [
-    (Story) => (
-      <div>
-        <div style={{ height: "100vh", backgroundColor: "#eee" }}>
-          <p style={{ textAlign: "center" }}>▼▼▼ スクロールしてください ▼▼▼</p>
-        </div>
-        <Story />
-        <div style={{ height: "100vh", backgroundColor: "#eee" }} />
-      </div>
-    ),
-  ],
+  decorators: [ScrollAnimDecorator],
   argTypes: {
     thumbnail: { control: "text" },
   },
