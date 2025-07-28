@@ -44,8 +44,8 @@ export const ScrollAnim01 = ({ className, text, ...rest }: Props) => {
 
       animate(".animejs", {
         autoplay: onScroll({
-          enter: "bottom-=50 top",
-          leave: "top+=50 bottom",
+          enter: "bottom-=100 top",
+          leave: "top+=100 bottom",
           // debug: true,
           onEnterForward: (self) => {
             // console.log("onEnter");
