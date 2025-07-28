@@ -8,12 +8,13 @@ import styles from "./styles.module.css";
 import type { Scope } from "animejs";
 
 type OwnProps = {
-  thumbnail: string;
+  heading: string;
+  text: string;
 };
 
-type Props = Omit<React.ComponentProps<"img">, "src"> & OwnProps;
+type Props = Omit<React.ComponentProps<"section">, "children"> & OwnProps;
 
-export const ScrollAnim02 = ({ className, thumbnail, ...rest }: Props) => {
+export const ScrollAnim07 = ({ className, heading, text, ...rest }: Props) => {
   const root = useRef(null);
   const scope = useRef<Scope>(null);
   const [isAnimated, setIsAnimated] = useState(false);
@@ -42,18 +43,20 @@ export const ScrollAnim02 = ({ className, thumbnail, ...rest }: Props) => {
 
   return (
     <div ref={root}>
-      <div className={styles.container}>
-        <img
-          className={clsx(
-            "animejs",
-            styles.module,
-            isAnimated && styles.isAnimated,
-            className
-          )}
-          src={thumbnail}
-          {...rest}
-        />
-      </div>
+      <section
+        className={clsx(
+          "animejs",
+          styles.module,
+          isAnimated && styles.isAnimated,
+          className
+        )}
+        {...rest}
+      >
+        <h2 className={styles.heading}>
+          <span>{heading}</span>
+        </h2>
+        <p className={styles.text}>{text}</p>
+      </section>
     </div>
   );
 };

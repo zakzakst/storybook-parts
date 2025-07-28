@@ -22,8 +22,8 @@ export const ScrollAnim06 = ({ className, items, ...rest }: Props) => {
     scope.current = createScope({ root }).add(() => {
       animate(".animejs", {
         autoplay: onScroll({
-          enter: "bottom-=50 top",
-          leave: "top+=50 bottom",
+          enter: "bottom-=100 top",
+          leave: "top+=100 bottom",
           // debug: true,
           onEnter: (self) => {
             // console.log("onEnter");
