@@ -1,0 +1,61 @@
+.module {
+  position: relative;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #dbf708;
+  text-align: center;
+  text-shadow: (
+    #1c3dc7 1px 3px 1px,
+    #1c3dc7 3px 1px 1px,
+    #1c3dc7 2px 2px 1px,
+    #1c3dc7 1px -3px 1px,
+    #1c3dc7 3px -1px 1px,
+    #1c3dc7 2px -2px 1px,
+    #1c3dc7 -1px 3px 1px,
+    #1c3dc7 -3px 1px 1px,
+    #1c3dc7 -2px 2px 1px,
+    #1c3dc7 -1px -3px 1px,
+    #1c3dc7 -3px -1px 1px,
+    #1c3dc7 -2px -2px 1px
+  );
+  border: 3px solid #1c3dc7;
+  border-radius: 9999px;
+  box-shadow: (
+    1px 1px 0px #fff,
+    4px 4px 0px #dbf708,
+    1px 1px 0px inset #fff,
+    4px 4px 0px inset #dbf708
+  );
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 16px;
+    content: "";
+    background: #fff;
+    transition: all 1s cubic-bezier(0.96, -0.37, 0, 1.26);
+  }
+
+  &::before {
+    top: -6px;
+    right: 60px;
+  }
+
+  &::after {
+    bottom: -11px;
+    left: 60px;
+  }
+
+  &.isAnimated {
+    &::before {
+      right: calc(100% - 60px - 24px);
+    }
+
+    &::after {
+      left: calc(100% - 60px - 24px);
+    }
+  }
+}
