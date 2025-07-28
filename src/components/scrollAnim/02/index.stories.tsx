@@ -1,10 +1,10 @@
-import { ScrollAnim01 } from ".";
+import { ScrollAnim02 } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "ScrollAnim/01",
-  component: ScrollAnim01,
+  title: "ScrollAnim/02",
+  component: ScrollAnim02,
   decorators: [
     (Story) => (
       <div>
@@ -17,16 +17,16 @@ const meta = {
     ),
   ],
   argTypes: {
-    text: { control: "text" },
+    thumbnail: { control: "text" },
   },
   // args: {},
-} satisfies Meta<typeof ScrollAnim01>;
+} satisfies Meta<typeof ScrollAnim02>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    text: "スクロールアニメーション01",
+    thumbnail: "https://picsum.photos/id/237/200/300",
   },
 };

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 import {
   createScope,
@@ -22,10 +22,10 @@ type Props = Omit<React.ComponentProps<"div">, "children"> & OwnProps;
 export const ScrollAnim01 = ({ className, text, ...rest }: Props) => {
   // TODO: spanで分割すると読み上げツールを利用した際に不自然になる？確認して必要であれば対応（role=presentation, aria-labelとか使う？）
   const root = useRef(null);
-  const [scope, setScope] = useState<Scope>();
+  const scope = useRef<Scope>(null);
 
   useEffect(() => {
-    const _scope = createScope({ root }).add(() => {
+    scope.current = createScope({ root }).add(() => {
       const tl = createTimeline()
         .add(".animejs span", {
           opacity: 0,
@@ -38,16 +38,16 @@ export const ScrollAnim01 = ({ className, text, ...rest }: Props) => {
           opacity: 1,
           scale: 1,
           duration: 500,
-          ease: "out(2)",
-          delay: stagger(100, { ease: "in(1)" }),
+          ease: "out(3)",
+          delay: stagger(100, { ease: "in(3)" }),
         });
 
       animate(".animejs", {
         autoplay: onScroll({
-          enter: "bottom+=50 top",
+          enter: "bottom-=50 top",
           leave: "top+=50 bottom",
           // debug: true,
-          onEnter: (self) => {
+          onEnterForward: (self) => {
             // console.log("onEnter");
             tl.play();
             self.revert();
@@ -55,9 +55,12 @@ export const ScrollAnim01 = ({ className, text, ...rest }: Props) => {
         }),
       });
     });
-    setScope(_scope);
-    return () => scope?.revert();
-  }, [scope]);
+    return () => {
+      if (scope.current) {
+        scope.current.revert();
+      }
+    };
+  }, []);
 
   return (
     <div ref={root}>
