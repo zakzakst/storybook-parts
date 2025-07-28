@@ -29,7 +29,7 @@ module.exports = {
           "scrollAnim",
           // "section",
           "serviceList",
-          // "start-anim",
+          // "startAnim",
           // "utility",
         ],
       },

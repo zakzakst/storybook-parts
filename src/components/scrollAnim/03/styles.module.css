@@ -3,11 +3,8 @@
     display: inline-block;
     font-size: 40px;
     opacity: 0;
-    transition-timing-function: cubic-bezier(0.45, 0.25, 0.15, 1);
-    transition-duration: 1s;
-    transition-property: transform, opacity;
     transform: translate(0.5em, 40%) rotateX(-30deg) rotateY(-30deg);
-    transition-delay: calc(var(--char-num) * 0.03s);
+    transition: transform 1s cubic-bezier(0.45, 0.25, 0.15, 1) calc(var(--char-num) * 0.03s), opacity 1s cubic-bezier(0.45, 0.25, 0.15, 1) calc(var(--char-num) * 0.03s);
   }
 
   &.isAnimated > span {

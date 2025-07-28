@@ -1,25 +1,25 @@
-// https://www.ranaextractive.com/
+// https://www.satohtakeru.com/
 import { ScrollAnimDecorator } from "../../../utils/storybook-decorators";
 
-import { ScrollAnim01 } from ".";
+import { ScrollAnim04 } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "ScrollAnim/01",
-  component: ScrollAnim01,
+  title: "ScrollAnim/04",
+  component: ScrollAnim04,
   decorators: [ScrollAnimDecorator],
   argTypes: {
-    text: { control: "text" },
+    thumbnail: { control: "text" },
   },
   // args: {},
-} satisfies Meta<typeof ScrollAnim01>;
+} satisfies Meta<typeof ScrollAnim04>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    text: "スクロールアニメーション01",
+    thumbnail: "https://picsum.photos/id/237/300/200",
   },
 };
