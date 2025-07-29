@@ -1,0 +1,43 @@
+.module {
+  opacity: 0;
+  transform: translateX(15px);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #027e7e;
+    content: attr(data-text);
+    background: linear-gradient(-45deg, #33b7b9, #006d75);
+    background-clip: text;
+    opacity: 0.25;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & > span {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 30px;
+    font-weight: bold;
+    color: #027e7e;
+    background: linear-gradient(-45deg, #33b7b9, #006d75);
+    background-clip: text;
+    clip-path: polygon(0 0, 0 100%, 0 100%, 0 0);
+    transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-text-fill-color: transparent;
+  }
+
+  &.isAnimated {
+    opacity: 1;
+    transform: translateX(0);
+
+    & > span {
+      clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    }
+  }
+}
