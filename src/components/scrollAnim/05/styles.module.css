@@ -5,28 +5,14 @@
   font-weight: bold;
   color: #dbf708;
   text-align: center;
-  text-shadow: (
-    #1c3dc7 1px 3px 1px,
-    #1c3dc7 3px 1px 1px,
-    #1c3dc7 2px 2px 1px,
-    #1c3dc7 1px -3px 1px,
-    #1c3dc7 3px -1px 1px,
-    #1c3dc7 2px -2px 1px,
-    #1c3dc7 -1px 3px 1px,
-    #1c3dc7 -3px 1px 1px,
-    #1c3dc7 -2px 2px 1px,
-    #1c3dc7 -1px -3px 1px,
-    #1c3dc7 -3px -1px 1px,
-    #1c3dc7 -2px -2px 1px
-  );
+  text-shadow: #1c3dc7 1px 3px 1px, #1c3dc7 3px 1px 1px, #1c3dc7 2px 2px 1px,
+    #1c3dc7 1px -3px 1px, #1c3dc7 3px -1px 1px, #1c3dc7 2px -2px 1px,
+    #1c3dc7 -1px 3px 1px, #1c3dc7 -3px 1px 1px, #1c3dc7 -2px 2px 1px,
+    #1c3dc7 -1px -3px 1px, #1c3dc7 -3px -1px 1px, #1c3dc7 -2px -2px 1px;
   border: 3px solid #1c3dc7;
   border-radius: 9999px;
-  box-shadow: (
-    1px 1px 0px #fff,
-    4px 4px 0px #dbf708,
-    1px 1px 0px inset #fff,
-    4px 4px 0px inset #dbf708
-  );
+  box-shadow: 1px 1px 0 #fff, 4px 4px 0 #dbf708, 1px 1px 0 inset #fff,
+    4px 4px 0 inset #dbf708;
 
   &::before,
   &::after {
