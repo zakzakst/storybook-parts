@@ -1,4 +1,6 @@
 // https://www.dentist-sato.com/
+import { ContainerQueryDecorator } from "../../../utils/storybook-decorators";
+
 import { Heading03 } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react-vite";
@@ -6,13 +8,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 const meta = {
   title: "Heading/03",
   component: Heading03,
-  decorators: [
-    (Story) => (
-      <div style={{ containerType: "inline-size" }}>
-        <Story />
-      </div>
-    ),
-  ],
+  decorators: [ContainerQueryDecorator],
 } satisfies Meta<typeof Heading03>;
 
 export default meta;
