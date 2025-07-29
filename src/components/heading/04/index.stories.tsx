@@ -1,4 +1,6 @@
 // https://quantitative.jp/recruit
+import { ContainerQueryDecorator } from "../../../utils/storybook-decorators";
+
 import { Heading04 } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react-vite";
@@ -6,13 +8,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 const meta = {
   title: "Heading/04",
   component: Heading04,
-  decorators: [
-    (Story) => (
-      <div style={{ containerType: "inline-size" }}>
-        <Story />
-      </div>
-    ),
-  ],
+  decorators: [ContainerQueryDecorator],
 } satisfies Meta<typeof Heading04>;
 
 export default meta;

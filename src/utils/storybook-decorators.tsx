@@ -9,3 +9,9 @@ export const ScrollAnimDecorator = (Story: PartialStoryFn) => (
     <div style={{ height: "100vh", backgroundColor: "#eee" }} />
   </div>
 );
+
+export const ContainerQueryDecorator = (Story: PartialStoryFn) => (
+  <div style={{ containerType: "inline-size" }}>
+    <Story />
+  </div>
+);

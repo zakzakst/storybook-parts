@@ -1,4 +1,6 @@
 // https://www.yokohama-stadium.co.jp/
+import { ContainerQueryDecorator } from "../../../utils/storybook-decorators";
+
 import { Card04 } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react-vite";
@@ -12,13 +14,7 @@ const meta = {
   args: {
     href: "#",
   },
-  decorators: [
-    (Story) => (
-      <div style={{ containerType: "inline-size" }}>
-        <Story />
-      </div>
-    ),
-  ],
+  decorators: [ContainerQueryDecorator],
 } satisfies Meta<typeof Card04>;
 
 export default meta;

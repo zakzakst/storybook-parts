@@ -1,4 +1,6 @@
 // https://smartdrive.co.jp/
+import { ContainerQueryDecorator } from "../../../utils/storybook-decorators";
+
 import { NewsList05 } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react-vite";
@@ -6,13 +8,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 const meta = {
   title: "NewsList/05",
   component: NewsList05,
-  decorators: [
-    (Story) => (
-      <div style={{ containerType: "inline-size" }}>
-        <Story />
-      </div>
-    ),
-  ],
+  decorators: [ContainerQueryDecorator],
 } satisfies Meta<typeof NewsList05>;
 
 export default meta;
