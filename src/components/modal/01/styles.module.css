@@ -1,0 +1,150 @@
+.module {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+    "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ",
+    sans-serif;
+
+  &.isOpen {
+    display: flex;
+  }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 70%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  max-width: calc(100% - 24px);
+  max-height: calc(100% - 24px);
+  padding: 72px 72px 60px;
+  background: #fff;
+  border-radius: 24px;
+}
+
+.head {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.body {
+  padding-right: 8px;
+  margin-top: 24px;
+  margin-right: -8px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    appearance: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #43ceb2;
+    border: 0;
+    border-radius: 100vmax;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 100vmax;
+  }
+
+  &::-webkit-scrollbar:vertical {
+    width: 8px;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    inset: 0;
+    width: 3px;
+    margin: auto;
+    content: "";
+    background: #43ceb2;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.thumbnail {
+  position: relative;
+  width: 400px;
+  cursor: pointer;
+}
+
+.thumbnailIcon {
+  position: absolute;
+  inset: 0;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  background: rgb(0 0 0 / 70%);
+  border-radius: 50%;
+  transition: transform 0.3s;
+
+  &::before,
+  &::after {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    content: "";
+    background: #43ceb2;
+    transition: transform 0.3s;
+  }
+
+  &::before {
+    width: 28px;
+    height: 4px;
+  }
+
+  &::after {
+    width: 4px;
+    height: 28px;
+  }
+}
+
+:where(.thumbnail:hover) {
+  .thumbnailIcon {
+    transform: scale(1.1);
+
+    &::before,
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}
