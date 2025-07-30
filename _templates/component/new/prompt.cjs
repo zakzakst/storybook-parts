@@ -23,7 +23,7 @@ module.exports = {
           // "hero",
           // "loader",
           // "menu",
-          // "modal",
+          "modal",
           "newsList",
           // "other",
           "scrollAnim",
