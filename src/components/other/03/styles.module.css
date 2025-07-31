@@ -1,0 +1,84 @@
+.module {
+  padding: 80px 30px;
+  font-family: "Kiwi Maru", serif;
+  background: #006ebb;
+}
+
+.heading {
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  padding: 100px 64px;
+  margin-top: 52px;
+  background: #fff;
+  &::before,
+  &::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 18px;
+    content: "";
+    background: linear-gradient(
+      -45deg,
+      #fff 25%,
+      #feda00 25%,
+      #feda00 50%,
+      #fff 50%,
+      #fff 75%,
+      #feda00 75%,
+      #feda00
+    );
+    background-size: 48px 48px;
+    will-change: animation;
+    animation: other03BorderSlide 20s linear 0s infinite;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+}
+.subHeading {
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #006ebb;
+  border-bottom: 2px dotted #006ebb;
+}
+
+.list {
+  & > li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #006ebb;
+    & + li {
+      margin-top: 12px;
+    }
+    &::before {
+      position: absolute;
+      top: 12px;
+      left: 2px;
+      display: block;
+      width: 5px;
+      height: 5px;
+      content: "";
+      background: #006ebb;
+      border-radius: 50%;
+    }
+  }
+}
+
+@keyframes other03BorderSlide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
