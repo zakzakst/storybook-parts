@@ -25,7 +25,7 @@ module.exports = {
           // "menu",
           "modal",
           "newsList",
-          // "other",
+          "other",
           "scrollAnim",
           // "section",
           "serviceList",
