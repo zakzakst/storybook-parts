@@ -1,0 +1,25 @@
+.module {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 20px;
+  right: 0;
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  &:not(.isShowText) {
+    transform: translateX(calc(100% - 60px));
+    &:hover {
+      transform: translateX(0);
+    }
+  }
+}
+
+.icon {
+  display: block;
+  width: 20px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
