@@ -1,3 +1,4 @@
+// https://www.snowsand.jp/
 import { Other04 } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react-vite";

@@ -17,3 +17,5 @@ https://zakzakst.github.io/parts/components/detail/other07.html
 https://react-icons.github.io/react-icons/
 
 ### あとでやる
+
+src\components\other\06\index.tsx
