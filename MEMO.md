@@ -18,4 +18,4 @@ https://react-icons.github.io/react-icons/
 
 ### あとでやる
 
-https://zakzakst.github.io/parts/components/detail/other09.html
+src\components\other\06\index.tsx
