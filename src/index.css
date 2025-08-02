@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=M+PLUS+Rounded+1c:wght@500&family=Work+Sans:wght@600&family=Metrophobic&family=Kosugi+Maru&family=Barlow:wght@400;600;700&family=Comfortaa:wght@700&family=Roboto:wght@400;900&family=Crimson+Text&family=Sawarabi+Gothic&family=M+PLUS+1p:wght@700&family=Oswald:wght@200;400;600;700&family=Playfair+Display:wght@700&family=Open+Sans:wght@700&family=Lato:ital,wght@0,400;0,900;1,400&family=Montserrat&family=Josefin+Sans:wght@600&family=Noto+Sans+JP:wght@400;500;900&family=EB+Garamond&family=Source+Serif+4:opsz@8..60&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Lora&family=M+PLUS+Rounded+1c:wght@500&family=Work+Sans:wght@600&family=Metrophobic&family=Kosugi+Maru&family=Barlow:wght@400;600;700&family=Comfortaa:wght@700&family=Roboto:wght@400;900&family=Crimson+Text&family=Sawarabi+Gothic&family=M+PLUS+1p:wght@700&family=Oswald:wght@200;400;600;700&family=Playfair+Display:wght@700&family=Open+Sans:wght@700&family=Lato:ital,wght@0,400;0,900;1,400&family=Montserrat&family=Josefin+Sans:wght@600&family=Noto+Sans+JP:wght@400;500;900&family=EB+Garamond&family=Source+Serif+4:opsz@8..60&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/yakuhanjp@3.3.1/dist/css/yakuhanjp.min.css");
 
 /*
@@ -98,4 +98,8 @@ li {
 button {
   border: none;
   background-color: transparent;
+}
+
+i {
+  font-style: normal;
 }

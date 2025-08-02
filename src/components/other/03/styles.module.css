@@ -15,6 +15,7 @@
   padding: 100px 64px;
   margin-top: 52px;
   background: #fff;
+
   &::before,
   &::after {
     position: absolute;
@@ -33,16 +34,19 @@
       #feda00
     );
     background-size: 48px 48px;
-    will-change: animation;
     animation: other03BorderSlide 20s linear 0s infinite;
+    will-change: animation;
   }
+
   &::before {
     top: 0;
   }
+
   &::after {
     bottom: 0;
   }
 }
+
 .subHeading {
   padding-bottom: 12px;
   margin-bottom: 20px;
@@ -57,9 +61,11 @@
     padding-left: 20px;
     font-size: 18px;
     color: #006ebb;
+
     & + li {
       margin-top: 12px;
     }
+
     &::before {
       position: absolute;
       top: 12px;
@@ -78,6 +84,7 @@
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: -100% 0;
   }

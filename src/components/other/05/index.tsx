@@ -45,6 +45,11 @@ export const Other05 = ({ className, text, ...rest }: Props) => {
         // });
       });
     });
+    return () => {
+      if (scope.current) {
+        scope.current.revert();
+      }
+    };
   });
 
   const onClickClose = () => {
