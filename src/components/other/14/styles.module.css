@@ -5,7 +5,6 @@
   overflow: hidden;
   background: #d9dce3;
   mask: url("/other14/text.svg") repeat-x;
-  mask: url("/other14/text.svg") repeat-x;
   mask-position: left top;
   mask-size: auto 100%;
   animation: other14maskSlide 80s linear infinite;

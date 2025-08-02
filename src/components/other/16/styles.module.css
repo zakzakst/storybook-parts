@@ -1,8 +1,8 @@
 .module {
   position: relative;
-  overflow: hidden;
   width: 100%;
   aspect-ratio: 1280 / 853;
+  overflow: hidden;
   background: #000;
 }
 
@@ -12,6 +12,7 @@
   position: absolute;
   inset: -50px;
   transition: transform 0.2s;
+
   > img {
     width: 100%;
     height: 100%;
