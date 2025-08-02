@@ -14,7 +14,8 @@ https://zakzakst.github.io/parts/components/detail/other22.html
 
 ### メモ
 
-https://react-icons.github.io/react-icons/
+- https://react-icons.github.io/react-icons/
+- https://animejs.com/documentation/
 
 ### あとでやる
 

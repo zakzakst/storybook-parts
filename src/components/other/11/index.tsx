@@ -33,8 +33,9 @@ export const Other11 = ({ className, text1, text2, text3, ...rest }: Props) => {
           ".text1 span",
           {
             display: "none",
+            delay: 500,
           },
-          stagger(100, { from: "last" })
+          stagger(50, { from: "last" })
         )
         .add(
           ".text2 span",
@@ -47,8 +48,9 @@ export const Other11 = ({ className, text1, text2, text3, ...rest }: Props) => {
           ".text2 span",
           {
             display: "none",
+            delay: 500,
           },
-          stagger(100, { from: "last" })
+          stagger(50, { from: "last" })
         )
         .add(
           ".text3 span",
