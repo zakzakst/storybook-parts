@@ -10,9 +10,9 @@
 }
 
 .img {
-  height: 100%;
   width: 100%;
-  background: url(/other10/sprite.svg) repeat;
+  height: 100%;
+  background: url("/other10/sprite.svg") repeat;
   background-size: 432px 420px;
   animation: other10ImgAnim 3s infinite steps(1, start);
 }
@@ -21,6 +21,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-432px);
   }
@@ -30,9 +31,11 @@
   0% {
     background-position-y: 0;
   }
+
   33% {
     background-position-y: -140px;
   }
+
   66% {
     background-position-y: -280px;
   }

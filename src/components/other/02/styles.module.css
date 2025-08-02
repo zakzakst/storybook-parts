@@ -1,6 +1,6 @@
 .module {
   display: inline-block;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 600;
   color: transparent;
   background: linear-gradient(
@@ -11,7 +11,7 @@
     #000 100%
   );
   background-position: 100% 0;
-  -webkit-background-clip: text;
+  background-clip: text;
   background-clip: text;
   background-size: 320% 100%;
   transition: background-position 1.8s cubic-bezier(0.23, 1, 0.32, 1);

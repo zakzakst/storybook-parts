@@ -7,6 +7,7 @@
     position: relative;
     display: inline-block;
     cursor: help;
+
     &::before {
       position: absolute;
       right: 0;
@@ -20,6 +21,7 @@
       opacity: 0.5;
       animation: other04Anim 0.8s linear 0s infinite;
     }
+
     &:hover::before {
       opacity: 1;
     }
@@ -30,6 +32,7 @@
   0% {
     background-position: 0 0;
   }
+
   100% {
     background-position: -12px 0;
   }

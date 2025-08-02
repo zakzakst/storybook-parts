@@ -24,10 +24,7 @@
   &::before,
   &::after {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     width: 20px;
     height: 2px;
     margin: auto;
@@ -47,9 +44,9 @@
     opacity: 0;
     fill: none;
     stroke: #fff;
+    stroke-width: 4px;
     stroke-dasharray: 880;
     stroke-dashoffset: -440;
-    stroke-width: 4px;
     transition: all 0.6s ease-in-out;
   }
 
