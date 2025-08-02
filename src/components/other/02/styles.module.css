@@ -12,7 +12,6 @@
   );
   background-position: 100% 0;
   background-clip: text;
-  background-clip: text;
   background-size: 320% 100%;
   transition: background-position 1.8s cubic-bezier(0.23, 1, 0.32, 1);
 
