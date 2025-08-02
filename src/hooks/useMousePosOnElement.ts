@@ -7,11 +7,15 @@ import {
 type MousePos = {
   x: number;
   y: number;
+  offsetCenterX: number;
+  offsetCenterY: number;
 };
 
 const DefaultMousePos: MousePos = {
   x: 0,
   y: 0,
+  offsetCenterX: 0,
+  offsetCenterY: 0,
 };
 
 export const useMousePosOnElement = (
@@ -37,7 +41,9 @@ export const useMousePosOnElement = (
           : pointerY > targetRef.current.clientHeight
           ? targetRef.current.clientHeight
           : pointerY;
-      setPos({ x, y });
+      const offsetCenterX = x - targetRef.current.clientWidth / 2;
+      const offsetCenterY = y - targetRef.current.clientHeight / 2;
+      setPos({ x, y, offsetCenterX, offsetCenterY });
     },
     [targetRef]
   );
