@@ -7,8 +7,6 @@
   mask: url("/other14/text.svg") repeat-x;
   mask: url("/other14/text.svg") repeat-x;
   mask-position: left top;
-  mask-position: left top;
-  mask-size: auto 100%;
   mask-size: auto 100%;
   animation: other14maskSlide 80s linear infinite;
 }
@@ -41,11 +39,9 @@
 @keyframes other14maskSlide {
   0% {
     mask-position: left top;
-    mask-position: left top;
   }
 
   100% {
-    mask-position: left -1600px top;
-    mask-position: left -1600px top;
+    mask-position: left -1600px top 0;
   }
 }

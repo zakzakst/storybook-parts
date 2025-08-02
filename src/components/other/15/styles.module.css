@@ -1,0 +1,93 @@
+.module {
+  position: relative;
+  width: 800px;
+}
+
+.svg {
+  width: 100%;
+}
+
+.svgMask {
+  > path {
+    stroke-width: 20px;
+    position: relative;
+    animation: other15SwitchMask 2s step-end infinite;
+    &:nth-child(even) {
+      animation-delay: 1s;
+    }
+  }
+}
+
+.svgBase {
+  > path {
+    fill: black;
+    animation: other15SwitchBase 2s step-end infinite;
+    &:nth-child(even) {
+      animation-delay: 1s;
+    }
+  }
+}
+
+.svgImage {
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.char {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  transform: rotate(-45deg);
+  font-size: 120px;
+  font-weight: bold;
+  animation: other15SwitchChar 2s step-end infinite;
+}
+
+@keyframes other15SwitchChar {
+  0% {
+    left: 0;
+    right: auto;
+    transform: rotate(-45deg);
+  }
+  50% {
+    left: auto;
+    right: 0;
+    transform: rotate(45deg);
+  }
+  100% {
+    left: auto;
+    right: 0;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes other15SwitchMask {
+  0% {
+    fill: transparent;
+    stroke: transparent;
+  }
+  50% {
+    fill: white;
+    stroke: #000;
+  }
+  100% {
+    fill: white;
+    stroke: #000;
+  }
+}
+
+@keyframes other15SwitchBase {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
