@@ -1,0 +1,51 @@
+.module {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  background: #d9dce3;
+  mask: url("/other14/text.svg") repeat-x;
+  mask: url("/other14/text.svg") repeat-x;
+  mask-position: left top;
+  mask-position: left top;
+  mask-size: auto 100%;
+  mask-size: auto 100%;
+  animation: other14maskSlide 80s linear infinite;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    #2d3287 0%,
+    #803f8c 38.42%,
+    #d5553e 76.85%,
+    #fbca1b 100%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s, height 0.4s;
+  will-change: transform;
+
+  &.isCircleActive {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes other14maskSlide {
+  0% {
+    mask-position: left top;
+    mask-position: left top;
+  }
+
+  100% {
+    mask-position: left -1600px top;
+    mask-position: left -1600px top;
+  }
+}
