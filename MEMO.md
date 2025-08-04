@@ -1,6 +1,6 @@
 ### 次やる
 
-https://zakzakst.github.io/parts/components/detail/other28.html
+https://zakzakst.github.io/parts/components/detail/other37.html
 
 ### やること
 
