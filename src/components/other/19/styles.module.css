@@ -1,1 +1,4 @@
-.module {}
+.module {
+  display: flex;
+  gap: 24px;
+}

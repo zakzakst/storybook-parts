@@ -1,18 +1,18 @@
-// https://zakzakst.github.io/parts/components/detail/other28.html
 import clsx from "clsx";
 
+import { Bookmark } from "./parts/Bookmark";
+import { Heart } from "./parts/Heart";
+import { Star } from "./parts/Star";
 import styles from "./styles.module.css";
 
-type OwnProps = {
-  text: string;
-};
+type Props = Omit<React.ComponentProps<"div">, "children">;
 
-type Props = Omit<React.ComponentProps<"div">, "children"> & OwnProps;
-
-export const Other19 = ({ className, text, ...rest }: Props) => {
+export const Other19 = ({ className, ...rest }: Props) => {
   return (
     <div className={clsx(styles.module, className)} {...rest}>
-      {text}
+      <Heart />
+      <Star />
+      <Bookmark />
     </div>
   );
 };
