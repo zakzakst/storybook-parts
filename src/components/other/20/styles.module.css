@@ -1,8 +1,8 @@
 .module {
   width: 100%;
+  max-width: calc(180px * 8 + 20px);
   height: 500px;
   overflow: auto;
-  max-width: calc(180px * 8 + 20px);
 
   table {
     width: calc(180px * 8);
@@ -10,18 +10,21 @@
 
   tr:nth-of-type(1) {
     th {
-      background: #000;
-      color: #fff;
       position: sticky;
       top: 0;
       left: 0;
       z-index: 1;
+      color: #fff;
+      background: #000;
+
       &:first-child {
         z-index: 2;
       }
+
       &:nth-child(7) {
         background: #006;
       }
+
       &:nth-child(8) {
         background: #600;
       }
@@ -39,11 +42,11 @@
 
   tr:not(:first-child) {
     th:nth-of-type(1) {
-      background: #333;
-      color: #fff;
       position: sticky;
       top: 0;
       left: 0;
+      color: #fff;
+      background: #333;
     }
   }
 }
