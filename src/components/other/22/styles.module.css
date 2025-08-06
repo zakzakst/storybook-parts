@@ -1,0 +1,42 @@
+.module {
+  height: min(300px, calc(100vh - 60px));
+  overflow: hidden;
+  background: #555;
+  border-radius: 24px;
+}
+
+.inner {
+  height: 100%;
+  overflow: hidden;
+}
+
+.content {
+  height: 100%;
+  padding: 8px;
+  padding-right: 0;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background: transparent;
+    border: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(255 255 255 / 30%);
+    border-radius: 4px;
+  }
+}
+
+.contentInner {
+  height: 500px;
+  padding: 24px;
+  color: #fff;
+  background: #222;
+  border-radius: 16px;
+}
