@@ -103,3 +103,7 @@ button {
 i {
   font-style: normal;
 }
+
+table {
+  border-collapse: collapse;
+}
