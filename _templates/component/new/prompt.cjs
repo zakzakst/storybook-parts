@@ -20,7 +20,7 @@ module.exports = {
           // "footer",
           // "form",
           "heading",
-          // "hero",
+          "hero",
           // "loader",
           // "menu",
           "modal",
