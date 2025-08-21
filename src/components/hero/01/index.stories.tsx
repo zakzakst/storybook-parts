@@ -1,3 +1,4 @@
+// https://zakzakst.github.io/parts/components/detail/hero01.html
 import { Hero01 } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react-vite";
