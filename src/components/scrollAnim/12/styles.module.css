@@ -1,0 +1,46 @@
+.module {
+  position: relative;
+  display: inline-block;
+  color: #1e2432;
+}
+
+.line {
+  position: relative;
+  display: inline-block;
+}
+
+.text {
+  font-size: 0;
+  & > span {
+    display: inline-block;
+    font-size: 60px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s;
+    transition-delay: calc(var(--index) * 0.1s);
+  }
+}
+
+.border {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 4px;
+  background: #1e2432;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 1s;
+}
+
+:where(.module.isAnimated) {
+  .text > span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .border {
+    transform: scaleX(1);
+  }
+}
