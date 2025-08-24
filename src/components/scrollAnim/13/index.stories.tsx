@@ -1,3 +1,6 @@
+// http://overpass.studiovoila.com/
+import { ScrollAnimDecorator } from "../../../utils/storybook-decorators";
+
 import { ScrollAnim13 } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react-vite";
@@ -5,8 +8,9 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 const meta = {
   title: "ScrollAnim/13",
   component: ScrollAnim13,
+  decorators: [ScrollAnimDecorator],
   argTypes: {
-    text: { control: "text" },
+    heading: { control: "text" },
   },
   // args: {},
 } satisfies Meta<typeof ScrollAnim13>;
@@ -16,6 +20,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    text: "テキスト",
+    heading: "SCROLL ANIMATION",
   },
 };
