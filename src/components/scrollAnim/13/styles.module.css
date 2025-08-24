@@ -1,1 +1,8 @@
-.module {}
+.module {
+  overflow: hidden;
+}
+
+.heading {
+  font-size: 60px;
+  transform: translateX(calc(100% - var(--anim-progress) * 100%));
+}
