@@ -1,0 +1,21 @@
+.module {
+}
+
+.imgWrapper {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: var(--offset-bg);
+  left: 0;
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
