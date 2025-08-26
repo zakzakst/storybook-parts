@@ -6,7 +6,7 @@ const meta = {
   title: "ScrollAnim/14",
   component: ScrollAnim14,
   argTypes: {
-    text: { control: "text" },
+    thumbnail: { control: "text" },
   },
   // args: {},
 } satisfies Meta<typeof ScrollAnim14>;
@@ -16,6 +16,6 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    text: "テキスト",
+    thumbnail: "https://picsum.photos/id/1000/400/200",
   },
 };
