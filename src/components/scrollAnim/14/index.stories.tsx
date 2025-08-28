@@ -1,3 +1,5 @@
+import { ScrollAnimDecorator } from "../../../utils/storybook-decorators";
+
 import { ScrollAnim14 } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react-vite";
@@ -5,6 +7,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 const meta = {
   title: "ScrollAnim/14",
   component: ScrollAnim14,
+  decorators: [ScrollAnimDecorator],
   argTypes: {
     thumbnail: { control: "text" },
   },
