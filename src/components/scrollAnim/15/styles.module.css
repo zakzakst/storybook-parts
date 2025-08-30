@@ -1,1 +1,14 @@
-.module {}
+.module {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 8px;
+  color: #1c1c1c;
+  background: #fff;
+  transition: 0.5s;
+  padding: 24px;
+
+  &.isAnimated {
+    color: #fff;
+    background: #272727;
+  }
+}
