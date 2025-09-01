@@ -1,1 +1,15 @@
-.module {}
+.module {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  font-size: 12px;
+  transition: 0.5s;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  &.isShow {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
