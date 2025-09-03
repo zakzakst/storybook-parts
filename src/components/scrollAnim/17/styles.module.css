@@ -1,0 +1,173 @@
+.module {
+  --header-height: 80px;
+}
+
+/* KV */
+.kv {
+  position: relative;
+  height: calc(100vh - var(--header-height));
+  overflow: hidden;
+  background: #fff;
+}
+
+.kvSlider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.kvSliderItem {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0;
+  animation: 6s ease-out forwards;
+  &.isActive {
+    z-index: 2;
+    animation-name: anim17ShowImage;
+  }
+  &.isLeave {
+    z-index: 2;
+    animation-name: anim17HideImage;
+  }
+}
+
+.kvImgWrapper {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: -50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  animation: inherit;
+  animation-timing-function: linear;
+}
+
+:where(.kvSliderItem.isActive) {
+  .kvImgWrapper {
+    animation-name: anim17SlideIn;
+  }
+}
+
+:where(.kvSliderItem.isLeave) {
+  .kvImgWrapper {
+    animation-name: anim17SlideOut;
+  }
+}
+
+.kvImg {
+  display: none;
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: var(--header-height);
+  font-family: "Noto Serif JP", Garamond, "Yu Mincho", "YuMincho", "Meiryo",
+    sans-serif;
+  background: #fff;
+  box-shadow: 0 5px 25px rgba(86, 49, 56, 0.15),
+    0px 0px 8px rgba(86, 49, 56, 0.15);
+}
+
+.headerNav {
+  display: flex;
+  height: var(--header-height);
+  font-size: 12.5px;
+}
+
+.headerNavItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px 16px;
+  &::before {
+    position: absolute;
+    right: 16px;
+    bottom: 20px;
+    left: 16px;
+    height: 1px;
+    content: "";
+    background: #2c2929;
+    transition: 0.2s ease-out;
+    transform: scale(0);
+    transform-origin: left;
+  }
+  &:hover::before {
+    transform: scale(1);
+  }
+}
+
+.headerBtn {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: $height_header;
+  font-family: "Open Sans", "Yu Gothic", "游ゴシック", "YuGothic",
+    "游ゴシック体", Hiragino Kaku Gothic ProN, "Meiryo", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  background: #2c2929;
+  &:hover {
+    color: #fff;
+  }
+}
+
+@keyframes anim17ShowImage {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anim17HideImage {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes anim17SlideIn {
+  0% {
+    transform: translate3d(50px, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes anim17SlideOut {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50px, 0, 0);
+  }
+}
