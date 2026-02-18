@@ -1,0 +1,5 @@
+import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{c as d}from"./clsx-B-dksMZM.js";const p="_module_11sh9_1",l="_cover_11sh9_17",r={module:p,cover:l},m=({className:t,img:i,...n})=>s.jsxs("div",{children:[s.jsx("div",{className:d(r.module,t),style:{backgroundImage:`url(${i})`},...n}),s.jsx("div",{className:r.cover})]});m.__docgenInfo={description:"",methods:[],displayName:"Other01",props:{img:{required:!0,tsType:{name:"string"},description:""}}};const g={title:"Other/01",component:m,decorators:[t=>s.jsxs(s.Fragment,{children:[s.jsx("div",{style:{height:"500px"}}),s.jsx(t,{}),s.jsx("div",{style:{height:"500px"}})]})],argTypes:{img:{control:"text"}}},e={args:{img:"https://picsum.photos/800/400"}};var o,c,a;e.parameters={...e.parameters,docs:{...(o=e.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {
+    img: "https://picsum.photos/800/400"
+  }
+}`,...(a=(c=e.parameters)==null?void 0:c.docs)==null?void 0:a.source}}};const x=["Default"];export{e as Default,x as __namedExportsOrder,g as default};

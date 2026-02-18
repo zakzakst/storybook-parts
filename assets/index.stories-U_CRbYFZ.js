@@ -1,0 +1,14 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{r as o}from"./iframe-DXhOPygz.js";import{c as y}from"./clsx-B-dksMZM.js";const g="_module_hz0zv_1",z="_isOpen_hz0zv_23",f="_overlay_hz0zv_33",N="_content_hz0zv_45",w="_head_hz0zv_71",M="_title_hz0zv_81",O="_body_hz0zv_91",I="_close_hz0zv_143",k="_thumbnail_hz0zv_207",C="_thumbnailIcon_hz0zv_219",t={module:g,isOpen:z,overlay:f,content:N,head:w,title:M,body:O,close:I,thumbnail:k,thumbnailIcon:C},r=({className:n,thumbnail:h,title:m,children:p,...u})=>{const[_,i]=o.useState(!1),v=o.useCallback(()=>{const j=window.innerWidth-document.body.clientWidth;document.body.style.paddingRight=`calc(1rem + ${j}px)`,document.documentElement.style.overflow="hidden"},[]),x=o.useCallback(()=>{document.body.style.paddingRight="",document.documentElement.style.overflow=""},[]),b=()=>{i(!0),v()},c=()=>{i(!1),x()};return e.jsxs(e.Fragment,{children:[e.jsxs("button",{className:t.thumbnail,onClick:()=>{b()},children:[e.jsx("img",{src:h,alt:""}),e.jsx("span",{className:t.thumbnailIcon})]}),e.jsxs("div",{className:y(t.module,_&&t.isOpen,n),...u,children:[e.jsx("div",{className:t.overlay,onClick:()=>{c()}}),e.jsxs("div",{className:t.content,children:[e.jsx("div",{className:t.head,children:e.jsx("div",{className:t.title,children:m})}),e.jsx("div",{className:t.body,children:p}),e.jsx("button",{className:t.close,"aria-label":"モーダルを閉じる",onClick:()=>{c()}})]})]})]})};r.__docgenInfo={description:"",methods:[],displayName:"Modal01",props:{thumbnail:{required:!0,tsType:{name:"string"},description:""},title:{required:!0,tsType:{name:"string"},description:""}}};const R={title:"Modal/01",component:r,decorators:[n=>e.jsxs(e.Fragment,{children:[e.jsx(n,{}),e.jsxs("div",{style:{height:"100vh"},children:[e.jsx("p",{children:"▼▼▼ スクロール領域（画面固定確認用） ▼▼▼"}),e.jsx("p",{children:"横幅の変化確認用テキスト。横幅の変化確認用テキスト。横幅の変化確認用テキスト。横幅の変化確認用テキスト。横幅の変化確認用テキスト。横幅の変化確認用テキスト。横幅の変化確認用テキスト。横幅の変化確認用テキスト。横幅の変化確認用テキスト。横幅の変化確認用テキスト。"})]})]})],argTypes:{title:{control:"text"}}},s={args:{thumbnail:"https://picsum.photos/id/1000/400/200",title:"タイトルが入ります",children:e.jsxs(e.Fragment,{children:[e.jsx("div",{children:"テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"}),e.jsx("div",{children:e.jsx("img",{src:"https://picsum.photos/id/1000/400/200",width:"400",height:"200"})})]})}};var l,a,d;s.parameters={...s.parameters,docs:{...(l=s.parameters)==null?void 0:l.docs,source:{originalSource:`{
+  args: {
+    thumbnail: "https://picsum.photos/id/1000/400/200",
+    title: "タイトルが入ります",
+    children: <>\r
+        <div>\r
+          テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。\r
+        </div>\r
+        <div>\r
+          <img src="https://picsum.photos/id/1000/400/200" width="400" height="200" />\r
+        </div>\r
+      </>
+  }
+}`,...(d=(a=s.parameters)==null?void 0:a.docs)==null?void 0:d.source}}};const T=["Default"];export{s as Default,T as __namedExportsOrder,R as default};

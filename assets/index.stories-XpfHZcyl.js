@@ -1,0 +1,5 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{c as p}from"./clsx-B-dksMZM.js";const _="_loading_1jk4n_1",x="_loadingItem_1jk4n_13",g="_line_1jk4n_57",u="_lineItem_1jk4n_69",s={loading:_,loadingItem:x,line:g,lineItem:u},i=({className:c,text:m,...d})=>t.jsxs("div",{className:p(s.module,c),...d,children:[t.jsx("div",{className:s.loading,children:Array(8).fill(null).map((a,e)=>t.jsx("div",{className:s.loadingItem,style:{"--index":e+1}},e))}),t.jsx("div",{className:s.line,children:m.split("").map((a,e)=>t.jsx("span",{className:s.lineItem,style:{"--index":e+1},children:a},e))})]});i.__docgenInfo={description:"",methods:[],displayName:"Other12",props:{text:{required:!0,tsType:{name:"string"},description:""}}};const h={title:"Other/12",component:i,argTypes:{text:{control:"text"}}},n={args:{text:"テキストが入ります。テキストが入ります。テキストが入ります。"}};var r,l,o;n.parameters={...n.parameters,docs:{...(r=n.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  args: {
+    text: "テキストが入ります。テキストが入ります。テキストが入ります。"
+  }
+}`,...(o=(l=n.parameters)==null?void 0:l.docs)==null?void 0:o.source}}};const f=["Default"];export{n as Default,f as __namedExportsOrder,h as default};

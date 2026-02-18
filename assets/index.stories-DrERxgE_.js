@@ -1,0 +1,5 @@
+import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{r as o}from"./iframe-DXhOPygz.js";import{c as l}from"./clsx-B-dksMZM.js";const u="_module_4szts_1",h="_isShowText_4szts_25",_="_icon_4szts_43",t={module:u,isShowText:h,icon:_},T=3e3,a=({className:i,text:m,...x})=>{const[d,p]=o.useState(!0);return o.useEffect(()=>{setTimeout(()=>{p(!1)},T)},[]),s.jsxs("div",{className:l(t.module,d&&t.isShowText,i),...x,children:[s.jsx("i",{className:t.icon,children:"▶"}),m]})};a.__docgenInfo={description:"",methods:[],displayName:"Other09",props:{text:{required:!0,tsType:{name:"string"},description:""}}};const g={title:"Other/09",component:a,argTypes:{text:{control:"text"}}},e={args:{text:"ページ表示後3秒で引っ込む"}};var r,c,n;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  args: {
+    text: "ページ表示後3秒で引っ込む"
+  }
+}`,...(n=(c=e.parameters)==null?void 0:c.docs)==null?void 0:n.source}}};const j=["Default"];export{e as Default,j as __namedExportsOrder,g as default};

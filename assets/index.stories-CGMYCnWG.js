@@ -1,0 +1,6 @@
+import{C as m}from"./storybook-decorators-ba0aOUtK.js";import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{c as l}from"./clsx-B-dksMZM.js";const u="_module_1q8ho_1",g="_heading_1q8ho_13",h="_description_1q8ho_29",r={module:u,heading:g,description:h},i=({className:a,heading:d,description:c,...p})=>s.jsxs("hgroup",{className:l(r.module,a),...p,children:[s.jsx("h3",{className:r.heading,children:d}),s.jsx("p",{className:r.description,children:c})]});i.__docgenInfo={description:"",methods:[],displayName:"Heading03",props:{heading:{required:!0,tsType:{name:"string"},description:""},description:{required:!0,tsType:{name:"string"},description:""}}};const j={title:"Heading/03",component:i,decorators:[m]},e={args:{heading:"見出し03",description:"テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"}};var o,n,t;e.parameters={...e.parameters,docs:{...(o=e.parameters)==null?void 0:o.docs,source:{originalSource:`{
+  args: {
+    heading: "見出し03",
+    description: "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+  }
+}`,...(t=(n=e.parameters)==null?void 0:n.docs)==null?void 0:t.source}}};const q=["Default"];export{e as Default,q as __namedExportsOrder,j as default};

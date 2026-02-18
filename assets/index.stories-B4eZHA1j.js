@@ -1,0 +1,9 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{c as h}from"./clsx-B-dksMZM.js";const x="_module_256vv_1",_="_container_256vv_25",g="_link_256vv_35",v="_date_256vv_111",f="_thumbnail_256vv_131",j="_text_256vv_159",e={module:x,container:_,link:g,date:v,thumbnail:f,text:j},a=({className:o,mainImg:c,href:m,date:d,thumbnail:p,text:l,...u})=>t.jsxs("div",{className:e.container,children:[t.jsx("div",{className:h(e.module,o),...u,children:t.jsx("img",{src:c,alt:""})}),t.jsxs("a",{className:e.link,href:m,children:[t.jsx("p",{className:e.date,children:d}),t.jsx("div",{className:e.thumbnail,children:t.jsx("img",{src:p,alt:""})}),t.jsx("p",{className:e.text,children:l})]})]});a.__docgenInfo={description:"",methods:[],displayName:"Other07",props:{mainImg:{required:!0,tsType:{name:"string"},description:""},href:{required:!0,tsType:{name:"string"},description:""},date:{required:!0,tsType:{name:"string"},description:""},thumbnail:{required:!0,tsType:{name:"string"},description:""},text:{required:!0,tsType:{name:"string"},description:""}}};const N={title:"Other/07",component:a,argTypes:{text:{control:"text"}},args:{href:"#"}},s={args:{mainImg:"https://picsum.photos/id/1000/1000/500",href:"#",date:"2021.00.00",thumbnail:"https://picsum.photos/id/1001/400/200",text:"テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"}};var r,n,i;s.parameters={...s.parameters,docs:{...(r=s.parameters)==null?void 0:r.docs,source:{originalSource:`{
+  args: {
+    mainImg: "https://picsum.photos/id/1000/1000/500",
+    href: "#",
+    date: "2021.00.00",
+    thumbnail: "https://picsum.photos/id/1001/400/200",
+    text: "テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。"
+  }
+}`,...(i=(n=s.parameters)==null?void 0:n.docs)==null?void 0:i.source}}};const T=["Default"];export{s as Default,T as __namedExportsOrder,N as default};
