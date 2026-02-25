@@ -1,1 +1,54 @@
-.module {}
+.module {
+  --gap-space: 12px;
+  display: grid;
+  gap: 0 var(--gap-space);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: calc(-1 * var(--gap-space));
+}
+
+.cardContainer {
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  margin-top: var(--gap-space);
+}
+
+.card {
+  border: 1px solid #888;
+  padding: 12px;
+}
+
+.rank {
+  position: relative;
+  background-color: #f00;
+  color: #fff;
+  padding: 4px;
+  width: fit-content;
+  margin-bottom: 4px;
+  line-height: 1;
+  z-index: 1;
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 8px;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+  }
+}
+
+.cardThumbnail {
+  aspect-ratio: 400 / 200;
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.cardTitle {
+  font-weight: 700;
+}
